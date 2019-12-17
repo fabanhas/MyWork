@@ -1,0 +1,32 @@
+@media screen and (max-width: 1440px){ 
+    .clube-interna{
+        padding: 10px 150px;
+    }
+    
+}
+@media screen and (max-width: 1366px){ 
+    .clube-interna{
+        padding: 10px 50px;
+    }
+ }
+@media screen and (max-width: 768px){ 
+    
+    .btns-assinar::before{
+        left: 8px;
+        bottom: 40px;
+        top: unset;
+    }
+    .clube-interna, .anteriores{
+        padding: 20px;
+    }
+    .slick-dots li button:before{
+        font-size: 45px;
+    }
+    #contrato{
+        max-height: 95vh;
+        padding: 10px;
+    }
+    .btn-aceito{
+        max-width: 100%;
+    }
+}

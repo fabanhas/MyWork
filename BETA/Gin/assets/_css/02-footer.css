@@ -1,0 +1,30 @@
+.ft-title{
+    color: #818F4A;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+}
+#footer{
+    padding-top: 75px;
+}
+#footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer ul li a, #footer p{
+    color: #8C8C8C;
+    font-size: 12px;
+}
+#footer ul li:last-of-type{
+    margin-bottom: 1rem;
+}
+#footer p{
+    margin: 0;
+}
+.logo-footer{
+    max-width: 218px;
+    margin: auto;
+    margin-bottom: 2rem;
+}

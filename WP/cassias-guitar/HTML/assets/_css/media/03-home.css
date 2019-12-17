@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px){ 
+    .instrumentos-b .left-col p{
+        padding: 0px 10px;
+    }
+    #home-instruments .left-col{
+        padding: 0;
+    }
+ }

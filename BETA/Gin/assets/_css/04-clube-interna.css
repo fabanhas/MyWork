@@ -1,0 +1,146 @@
+.clube-interna{
+    padding: 10px 250px;
+    margin-top: 150px;
+}
+.btns-assinar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btns-assinar h2{
+    max-width: 48%;
+    cursor: pointer;
+}
+.btns-assinar h2.active{
+    color: #fff !important;
+    background-color: #818F4A !important;
+    border: 1px solid #818F4A !important;
+}
+.btns-assinar h2.plan-price{
+    background-color: #fff;
+    color: #818F4A;
+    border: 1px solid #818F4A;
+}
+.btns-assinar h2:last-of-type{
+    margin-left: 5px;
+}
+.btns-assinar h2:first-of-type{
+    margin-right: 5px;
+}
+.btns-assinar h2 small{
+    font-size: 16px;
+    display: block;
+}
+.btns-assinar h2 small:first-of-type{
+    margin-top: 10px;
+}
+.btns-assinar a{
+    background-color: #D6CCBC;
+    color: #000;
+    font-size: 22px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+.selection{
+    padding: 10px 250px;
+}
+.slider-ant{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.slider-ant img{
+    max-width: 320px;
+    margin: auto;
+}
+.anteriores{
+    padding: 10px 250px;
+}
+.slider-ant .slider-item{
+    text-align: center;
+    margin: 0 auto;
+}
+.slider-ant .slider-item p:first-of-type{
+    margin-top: 1rem;
+}
+.slider-ant .slider-item p{
+    margin: 0;
+}
+.slick-arrow{
+    color: #E9E9E9;
+    font-size: 50px;
+}
+.slick-next, .slick-prev{
+    width: 60px;
+    height: 112px;
+    z-index: 999;
+}
+.slick-prev:before, .slick-next:before{
+    content: none;
+}
+.descricao{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+.clube-interna h3{
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+.clube-interna p{
+    margin-bottom: 2rem;
+}
+#contrato{
+    max-width: 1000px;
+    max-height: 620px;
+    overflow: hidden;
+}
+#contrato > h2{
+    text-align: center;
+    font-size: 32px;
+    margin: 2rem 0;
+}
+#contrato > p{
+    font-size: 18px;
+    text-align: center;
+}
+.box-contrato{
+    border: 5px solid #E1E1E1;
+    padding: 25px;
+    overflow-y: scroll;
+    max-height: 315px;
+}
+.box-contrato h2{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.box-contrato p{
+    font-size: 11px;
+}
+.btn-aceito{
+    background-color: #D6CCBC;
+    color: #000;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 70%;
+    font-family: 'Playfair Display', serif;
+}
+.fancybox-stage{
+    background-color: rgba(81, 89, 41, 0.5);
+}
+.img-scroll{
+    position: sticky;
+    left: 50px;
+    top: 50px;
+    max-width: 100%;
+    transition: all .8s;
+    opacity: 1;
+}

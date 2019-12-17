@@ -1,0 +1,174 @@
+.banner-clube{
+    color: #fff;
+    padding: 75px 0;
+    padding-top: 250px;
+}
+.banner-clube hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.banner-clube h2{
+    font-size: 80px;
+}
+.banner-clube h3{
+    font-size: 36px;
+}
+#como{
+    background-color: #F7F6F3;
+    padding-top: 50px;   
+}
+#como h3{
+    margin: 0;
+}
+#como h3:first-of-type{
+    padding-bottom: 2rem;
+}
+#como h3:last-of-type{
+    padding-bottom: 10px;
+}
+#como > .container > small:last-of-type{
+    padding-bottom: 25px;
+    display: block;
+}
+#como h4{
+    margin: 1rem 0;
+}
+.plans{
+    display: flex;
+}
+.plan-div{
+    max-width: 33.3%;
+    width: 100%;
+    position: relative;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top: 150px;
+    color: #fff;
+    display: flex;
+    height: 414px;
+    background-repeat: no-repeat;
+}
+.plan-div > div:first-of-type{
+    max-width: 70%;
+    align-self: flex-end;
+}
+.plan-div > div:last-of-type{
+    max-width: 40%;
+    width: 100%;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.plan-div div p{
+    margin: 0;
+}
+.plan-div::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 76px;
+    width: 56px;
+    height: 11px;
+    background-color: #fff;
+}
+.assinar{
+    background-color: #D6CCBC;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-top: 0.9px;
+}
+.assinar:hover{
+    color: #000;
+}
+.plan-price{
+    background-color: #818F4A;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px
+}
+.price-plan{
+    font-size: 70px !important;
+    top: 0 !important;
+}
+.plan-price span{
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    position: relative;
+    top: -15px;
+}
+.plan-name{
+    font-size: 42px;
+}
+.plan-desc{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.oque-vem{
+    padding: 50px 75px;
+    height: 450px;
+}
+.oque-vem h2{
+    width: 100%;
+    font-size: 54px;
+    margin-bottom: 1.5rem;
+}
+.oque-vem p{
+    max-width: 500px;
+    font-size: 13px;
+}
+.benefits h3{
+    font-size: 32px;
+}
+.benefits ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.benefits ul li {
+    margin: 1rem 0;
+    font-size: 13px;
+}
+.benefits ul li i{
+    color: #6E6E6E;
+    font-size: 20px;
+    margin-right: 8px;
+}
+.white-separator{
+    height: 150px;
+}
+.know{
+    padding: 25px 50px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    height: 450px;
+}
+.know p{
+    font-size: 15px;
+}
+.know h2{
+    font-size: 54px;
+}
+.flex-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.flex-images img{
+    margin: 10px 15px;
+}
+.plan-div > div > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}

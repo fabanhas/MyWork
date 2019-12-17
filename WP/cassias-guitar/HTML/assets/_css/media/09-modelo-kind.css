@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .kind1, .kind2, .kind3{
+        padding: 50px 0;
+    }
+    .kind1 img, .kind2 img, .kind3 img{
+        max-width: 100%;
+        margin: 20px 0px;
+    }
+}

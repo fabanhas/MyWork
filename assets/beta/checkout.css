@@ -1,0 +1,444 @@
+/* Beta */
+/* Importantlandia */
+.canopus-cart-item-quantity input {
+    margin: 0px;
+}
+/* Input de quantidade*/
+.canopus-cart-item-quantity[_ngcontent-c3] .cart-qty-input[_ngcontent-c3] {
+    margin: 0;
+    border: 0;
+}
+.tingle-modal.checkout-cart-preview .tingle-modal-box {
+    width: 560px!important;
+}
+
+@media (min-width: 768px)
+.tingle-modal.checkout-cart-preview .tingle-modal-box {
+    width: 560px!important;
+}
+.canopus-cart-modal-bottom{
+    bottom: 0;
+    width: 100%;
+}
+
+
+.table-row.cart-row[_ngcontent-c3] {
+    border-top: 1px solid #eee !important;
+}
+.btn[_ngcontent-c3]{
+    color: #777;
+    background: none;
+    border: 0;
+}
+
+/* Reset overflow */
+.modal-open {
+  overflow: unset !important;
+}
+
+/* Fixa largura do wrapper */
+.canopus-cart-container,
+.canopus-payment-container {
+  max-width: 1170px;
+  margin: 50px auto 100px;
+  padding: 0;
+  font-family: Montserrat;
+  overflow-x: hidden;
+}
+
+/* Reset margin */
+.canopus-cart-container > .row,
+.canopus-payment-container > .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Oculta botão superior finalizar compra */
+.canopus-cart-container > div:first-child cart-proceed-to-payment-button,
+.canopus-payment-container > div:first-child cart-proceed-to-payment-button {
+  display: none;
+}
+
+/* Texto table header */
+.canopus-cart-container .table-header div,
+.canopus-payment-container .table-header div {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  letter-spacing: 1px;
+}
+
+/* Preço do item */
+.canopus-cart-container .canopus-cart-item-price,
+.canopus-payment-container .canopus-cart-item-price {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #626262 !important;
+}
+
+/* Nome do item */
+.canopus-cart-container .canopus-cart-item-info h4 a {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #666666 !important;
+}
+
+/* Margem p/ resumo compra */
+.canopus-cart-resume {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Texto resumo */
+.canopus-cart-resume .canopus-cart-subtotal .title,
+.canopus-cart-resume .canopus-cart-freight .title,
+.canopus-cart-resume .canopus-cart-total .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  text-align: left;
+  flex: 150px;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Subtotal e total */
+.canopus-cart-resume .canopus-cart-subtotal .value,
+.canopus-cart-resume .canopus-cart-total .value {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Subtotal */
+.canopus-cart-resume .canopus-cart-subtotal .value {
+  color: #707070;
+}
+
+/* Total */
+.canopus-cart-resume .canopus-cart-total .value {
+  color: #C11C1C;
+  font-weight: 700;
+}
+
+/* Oculta parte de desconto */
+.canopus-cart-resume .canopus-cart-discount {
+  display: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+  color: transparent;
+  background-color: #C11C1C;
+  border-color: #C11C1C;
+}
+
+/* Botão finalizar compra */
+.canopus-cart-container cart-proceed-to-payment-button .btn,
+.canopus-payment-container cart-proceed-to-payment-button .btn {
+  width: 165px;
+  max-height: 38px;
+  background: #C11C1C !important;
+  text-transform: uppercase !important;
+  color: transparent;
+  position: relative;
+  border-radius: 50px !important;
+  border: 0 !important;
+}
+
+.canopus-cart-footer>div:first-child a, .continue-shopping {
+  padding: 15px 21px !important;
+  border-radius: 2rem !important;
+}
+
+/* Detalhe na direita no botão */
+.canopus-cart-container cart-proceed-to-payment-button .btn:before {
+  content: none;
+}
+
+/* Texto botão finalizar */
+.canopus-cart-container cart-proceed-to-payment-button .btn:after {
+  content: "Finalizar Pedido";
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Background do botão finalizar */
+.canopus-cart-container cart-proceed-to-payment-button .btn:hover,
+.canopus-payment-container cart-proceed-to-payment-button .btn:hover {
+  color: transparent;
+}
+
+/* -- Seção pagamento */
+
+/* Pagamento wrapper */
+.canopus-payment-container {
+  font-family: Montserrat;
+}
+
+/* Boxes focus */
+.checkout-formbox,
+.checkout-formbox.active {
+  background: transparent !important;
+  border: 1px solid #e6e6e6 !important;
+  box-shadow: 0 0 17px 5px #EEEEEE!important;;
+}
+
+/* Boxes pending */
+.checkout-formbox.pending .text-muted {
+  color: #868e96!important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Botão 'próximo' */
+.canopus-payment-identification button[type=submit],
+.canopus-payment-delivery-freights button[type=button],
+.canopus-payment-payment-option button,
+payment-resume-pay-button button {
+  height: 42px;
+  background: #C11C1C !important;
+  font-size: 14px !important;
+  font-weight: 700!important;
+  font-family: Montserrat !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border: none !important;
+  border-radius: 20px !important;
+}
+
+.canopus-payment-identification button[type=submit]:hover,
+.canopus-payment-delivery-freights button[type=button]:hover,
+.canopus-payment-payment-option button:hover,
+payment-resume-pay-button button:hover {
+  color: #FFF;
+  background: #C11C1C;
+}
+
+/* Ícone dos boxes */
+.canopus-payment-container .checkout-formbox-header .fa,
+.canopus-payment-container .payment-resume-header .fa {
+  color: #666666 !important;
+}
+
+/* Texto header box */
+.canopus-payment-container .checkout-formbox-header,
+.canopus-payment-container .payment-resume-header {
+  font-size: 18px;
+  font-weight: 700;
+  color: #C11C1C !important;
+  padding-bottom: 13px;
+}
+
+/* Reset preço no resumo de itens */
+.canopus-payment-resume .canopus-cart-item-price {
+  margin-top: 0 !important;
+}
+.canopus-payment-resume .canopus-cart-item-price h5 {
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+/* Botão inferior continuar comprando e botão continuar comprando */
+.canopus-cart-footer > div:first-child a,
+.continue-shopping {
+  margin-right: -365px;
+  margin-top: 5px;
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+  border: 1px solid #E5E5E5;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  float: right !important;
+  letter-spacing: 2px;
+  display:none;
+}
+.continue-shopping {
+  margin-left: 16px;
+  margin-bottom: 30px;
+}
+
+/* Nome do produto no payment */
+.canopus-payment-resume .canopus-cart-item-info a {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #C11C1C !important;
+}
+
+/* Oculta imagem da seção payment */
+payment-resume .canopus-cart-item-image {
+  /*display: none !important;*/
+}
+
+.canopus-payment-resume .canopus-cart-item-price,
+.canopus-payment-resume .canopus-cart-item-quantity {
+  margin-top: 0 !important;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header {
+    min-height: 50px;
+  }
+
+  .canopus-cart-items .canopus-cart-item-image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  cart-row {
+    width: 100%;
+  }
+
+  cart-row .cart-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important
+  }
+
+  cart-row .canopus-cart-item-image {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    float: unset !important;
+  }
+
+  cart-row .canopus-cart-item-info {
+    max-width: 33% !important;
+    float: unset !important;
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+    cart-row .canopus-cart-item-info h4 {
+      margin-bottom: 0 !important;
+    }
+
+  cart-row .canopus-cart-item-price {
+    max-width: 20% !important;
+    display: inline-block !important;
+    position: relative !important;
+    margin-bottom: 0 !important;
+    line-height: 1 !important;
+    bottom: 0 !important;
+  }
+
+  cart-row .canopus-cart-item-quantity {
+    position: relative !important;
+    max-width: 65px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  cart-row .canopus-cart-item-remove {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .canopus-cart-container .table-header div,
+  .canopus-payment-container .table-header div {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+    .canopus-cart-resume .canopus-cart-subtotal .value,
+    .canopus-cart-resume .canopus-cart-total .value {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .canopus-cart-container cart-proceed-to-payment-button .btn,
+    .canopus-payment-container cart-proceed-to-payment-button .btn {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        z-index: 30;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 0 !important;
+        max-height: 75px;
+        height: 100%;
+    }
+    .canopus-cart-container cart-proceed-to-payment-button .btn:after {
+        left: 0;
+        right: 0;
+        line-height: 75px;
+        font-size: 16px;
+    }
+    .table-row.cart-row[_ngcontent-c3] {
+        border-top: 1px solid #eee !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+  cart-row .cart-row {
+    flex-wrap: wrap
+  }
+
+  cart-row .canopus-cart-item-image {
+    max-width: 30% !important;
+    width: 30% !important;
+    max-height: unset !important;
+  }
+
+  cart-row .canopus-cart-item-info {
+    width: 33.3% !important;
+    max-width: 33.3% !important;
+  }
+
+  cart-row .canopus-cart-item-info h4 a {
+    white-space: normal !important;
+    line-height: 1 !important;
+  }
+
+  cart-row .canopus-cart-item-price {
+    width: 33% !important;
+    max-width: 33.3% !important;
+  }
+
+  .canopus-cart-resume .canopus-cart-subtotal .title,
+  .canopus-cart-resume .canopus-cart-freight .title,
+  .canopus-cart-resume .canopus-cart-total .title {
+    flex: 110px;
+  }
+
+  .canopus-cart-container .mb-lg {margin-bottom: 0 !important;}
+
+  .canopus-cart-items[_ngcontent-c1] {
+    margin-top: 0 !important;
+  }
+
+  .cart-table .table-row {
+    padding-bottom: 10px !important;
+  }
+
+  .canopus-cart-footer>div:first-child a, .continue-shopping {
+    margin: 70px auto 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.abc-checkbox[_ngcontent-c23] input[type=checkbox][_ngcontent-c23], .abc-checkbox[_ngcontent-c23] input[type=radio][_ngcontent-c23] {
+    margin: 0px;
+    padding: 0px;
+}
+[_ngcontent-c10]{
+    margin: 0px;
+    padding: 0px;
+}

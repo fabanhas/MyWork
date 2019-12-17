@@ -1,0 +1,397 @@
+/* Beta */
+/* Importantlandia */
+
+/* Reset overflow */
+.modal-open {
+    overflow: unset !important;
+  }
+  
+  /* Fixa largura do wrapper */
+  .canopus-cart-container,
+  .canopus-payment-container {
+    max-width: 1170px;
+    margin: 50px auto 100px;
+    padding: 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+  }
+  
+  /* Reset margin */
+  .canopus-cart-container > .row,
+  .canopus-payment-container > .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Oculta botão superior finalizar compra */
+  .canopus-cart-container > div:first-child cart-proceed-to-payment-button,
+  .canopus-payment-container > div:first-child cart-proceed-to-payment-button {
+    display: none;
+  }
+  
+  /* Texto table header */
+  .canopus-cart-container .table-header div,
+  .canopus-payment-container .table-header div {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    letter-spacing: 1px;
+  }
+  
+  /* Preço do item */
+  .canopus-cart-container .canopus-cart-item-price,
+  .canopus-payment-container .canopus-cart-item-price {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #626262 !important;
+  }
+  
+  /* Nome do item */
+  .canopus-cart-container .canopus-cart-item-info h4 a {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #666666 !important;
+    text-transform: inherit !important;
+  }
+  
+  /* Margem p/ resumo compra */
+  .canopus-cart-resume {
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+  }
+  
+  /* Texto resumo */
+  .canopus-cart-resume .canopus-cart-subtotal .title,
+  .canopus-cart-resume .canopus-cart-freight .title,
+  .canopus-cart-resume .canopus-cart-total .title {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    text-transform: uppercase;
+    text-align: left;
+    flex: 150px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtotal e total */
+  .canopus-cart-resume .canopus-cart-subtotal .value,
+  .canopus-cart-resume .canopus-cart-total .value {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial;
+  }
+  
+  /* Subtotal */
+  .canopus-cart-resume .canopus-cart-subtotal .value {
+    color: #707070;
+    font-family: 'Montserrat';
+  }
+  
+  /* Total */
+  .canopus-cart-resume .canopus-cart-total .value {
+    color: #F49100;
+    font-weight: 700 !important;
+    font-family: 'Montserrat';
+  }
+  
+  /* Oculta parte de desconto */
+  .canopus-cart-resume .canopus-cart-discount {
+    display: none;
+  }
+  
+  /* Botão finalizar compra */
+  .canopus-cart-container cart-proceed-to-payment-button .btn,
+  .canopus-payment-container cart-proceed-to-payment-button .btn {
+    width: 160px;
+    min-height: 54px;
+    background: #F49100;
+    text-transform: unset;
+    color: transparent;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Texto botão finalizar */
+  .canopus-cart-container cart-proceed-to-payment-button .btn:after {
+    content: "Finalizar";
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 54px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+  }
+  
+  /* Background do botão finalizar */
+  .canopus-cart-container cart-proceed-to-payment-button .btn:hover,
+  .canopus-payment-container cart-proceed-to-payment-button .btn:hover {
+    color: transparent;
+  }
+  
+  /* -- Seção pagamento */
+  
+  /* Pagamento wrapper */
+  .canopus-payment-container {
+    font-family: Montserrat;
+  }
+  
+  /* Boxes focus */
+  .checkout-formbox,
+  .checkout-formbox.active {
+    background: transparent !important;
+    border: 1px solid #e6e6e6 !important;
+    box-shadow: 0 0 17px 5px #EEEEEE!important;;
+  }
+  
+  /* Boxes pending */
+  .checkout-formbox.pending .text-muted {
+    color: #868e96!important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  /* Botão 'próximo' */
+  .canopus-payment-identification button[type=submit],
+  .canopus-payment-delivery-freights button[type=button],
+  .canopus-payment-payment-option button,
+  payment-resume-pay-button button {
+    height: 42px;
+    background: #F49100;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  .canopus-payment-identification button[type=submit]:hover,
+  .canopus-payment-delivery-freights button[type=button]:hover,
+  .canopus-payment-payment-option button:hover,
+  payment-resume-pay-button button:hover {
+    color: #FFF;
+    background: #F49100;
+  }
+  
+  /* Ícone dos boxes */
+  .canopus-payment-container .checkout-formbox-header .fa,
+  .canopus-payment-container .payment-resume-header .fa {
+    color: #666666 !important;
+  }
+  
+  /* Texto header box */
+  .canopus-payment-container .checkout-formbox-header,
+  .canopus-payment-container .payment-resume-header {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F49100 !important;
+    padding-bottom: 13px;
+  }
+  
+  /* Reset preço no resumo de itens */
+  .canopus-payment-resume .canopus-cart-item-price {
+    margin-top: 0 !important;
+  }
+  .canopus-payment-resume .canopus-cart-item-price h5 {
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+  
+  /* Botão inferior continuar comprando e botão continuar comprando */
+  .canopus-cart-footer > div:first-child a,
+  .continue-shopping {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    border: 1px solid #E5E5E5;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .continue-shopping {
+    margin-left: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .canopus-payment-resume .canopus-cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Nome do produto no payment */
+  .canopus-payment-resume .canopus-cart-item-info a {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #666666 !important;
+  }
+  
+  /* Oculta imagem da seção payment */
+  /* payment-resume .canopus-cart-item-image {
+    display: none !important;
+  } */
+  
+  .canopus-payment-resume .canopus-cart-item-price,
+  .canopus-payment-resume .canopus-cart-item-quantity {
+    margin-top: 0 !important;
+  }
+  
+  /* Diferenciais Bayer */
+  
+  /* .canopus-cart-item-image a {
+    display: none !important;
+  } */
+  
+  .plan {
+    padding-bottom: 30px !important;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .header {
+      min-height: 50px;
+    }
+  
+    .canopus-cart-container,
+    .canopus-payment-container {
+      max-width: 95%;
+      margin: 50px auto 50px;
+    }
+  
+    .canopus-cart-items .canopus-cart-item-image {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  
+    cart-row {
+      width: 100%;
+    }
+  
+    cart-row .cart-row {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important
+    }
+  
+    cart-row .canopus-cart-item-image {
+      max-width: 80px !important;
+      max-height: 80px !important;
+      float: unset !important;
+    }
+  
+    cart-row .canopus-cart-item-info {
+      max-width: 33% !important;
+      float: unset !important;
+      margin-left: 10px !important;
+      margin-top: 0 !important;
+      padding: 0 !important;
+    }
+  
+      cart-row .canopus-cart-item-info h4 {
+        margin-bottom: 0 !important;
+      }
+  
+    cart-row .canopus-cart-item-price {
+      max-width: 20% !important;
+      display: inline-block !important;
+      position: relative !important;
+      margin-bottom: 0 !important;
+      line-height: 1 !important;
+      bottom: 0 !important;
+    }
+  
+    cart-row .canopus-cart-item-quantity {
+      position: relative !important;
+      max-width: 65px !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      margin-right: 0 !important;
+    }
+  
+    cart-row .canopus-cart-item-remove {
+      position: relative !important;
+      bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  
+    .canopus-cart-container .table-header div,
+    .canopus-payment-container .table-header div {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    cart-row .cart-row {
+      flex-wrap: wrap
+    }
+  
+    cart-row .canopus-cart-item-image {
+      max-width: 30% !important;
+      width: 30% !important;
+      max-height: unset !important;
+    }
+  
+    cart-row .canopus-cart-item-info {
+      width: 33.3% !important;
+      max-width: 33.3% !important;
+    }
+  
+    cart-row .canopus-cart-item-info h4 a {
+      white-space: normal !important;
+      line-height: 1 !important;
+    }
+  
+    cart-row .canopus-cart-item-price {
+      width: 33% !important;
+      max-width: 33.3% !important;
+    }
+  
+    .canopus-cart-resume .canopus-cart-subtotal .title,
+    .canopus-cart-resume .canopus-cart-freight .title,
+    .canopus-cart-resume .canopus-cart-total .title {
+      flex: 110px;
+    }
+  
+    .canopus-cart-container .mb-lg {margin-bottom: 0 !important;}
+  
+    .canopus-cart-items[_ngcontent-c1] {
+      margin-top: 0 !important;
+    }
+  
+    .cart-table .table-row {
+      padding-bottom: 10px !important;
+    }
+  
+    .canopus-cart-footer>div:first-child a, .continue-shopping {
+      margin: 70px auto 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    /* Centralizar botões do canopus footer */
+    .canopus-cart-footer > div:last-child {
+      max-width: 216px;
+      margin: auto !important;
+      padding: 0 !important;
+    }
+  
+    .canopus-cart-footer > div:first-child a {
+      margin: 30px auto;
+    }
+  
+    /* Remove espaço em branco do topo até o box de identificação */
+    .canopus-payment-container > div a {
+      margin: 20px auto 10px !important;
+    }
+  }
+  

@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px){
+    body.open{
+        position: fixed;
+        width: 100%;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .desktop-menu-icon a{
+        font-size: 0;
+    }
+    .desktop-menu-icon{
+        padding: 5px;
+    }
+    .desktop-menu-icon span{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .hamb-icon{
+        display: block;
+    }
+    .hamb-icon.open{
+        position: fixed;
+        left: 40px;
+        top: 25px;
+        z-index: 9999999;
+    }
+    .banner h1{
+        font-size: 56px;
+    }
+    .user, .sacola{
+        width: 33px;
+    }
+    header.mobile{
+        left: -100%;
+        transition: all .5s;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #f16521f0;
+        z-index: 9999;
+        top: 0;
+    }
+    header.mobile.open{
+        left: 0;
+    }
+    header.mobile.open .desktop-menu{
+        display: flex;
+        background: none;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: -webkit-fill-available;
+        max-height: 70vh;
+    }
+    header.mobile.open .desktop-menu a{
+        display: block;
+        width: 100%;
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    header.mobile.open .desktop-menu-icon{
+        display: block;
+        padding: 5px 10px;
+        max-width: fit-content;
+        margin-bottom: .5rem;
+    }
+    header.mobile.open .desktop-menu-icon a{
+        font-size: 14px;
+    }
+    header.mobile.open .desktop-menu-icon a span{
+        margin-right: 10px;
+    }
+    header.mobile.open .d-flex.flex-wrap{
+        flex-direction: column-reverse;
+    }
+    .social-mobile{
+        padding-top: 25px;
+    }   
+    .social-mobile a{
+        margin-right: .5rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer .col-md-2{
+        margin-bottom: 2rem;
+    }
+    .footer .d-flex{
+        justify-content: center;
+    }
+    .plano-item{
+        max-width: 100%;
+        height: 555px;
+        box-shadow: none;
+        padding: 20px;
+    }
+    .plano-item a.btn-orange{
+        bottom: 0;
+    }
+    .slick-dots{
+        bottom: -40px;
+    }
+    .easy .container:before, .easy .container:after{
+        content: none;
+    }
+    .desktop-menu-icon .desktop-drop a{
+        font-size: 15px;
+    }
+    .desktop-drop{
+        width: 110px;
+    }
+    .easy img{
+        display: none;
+    }
+    #form-contato input[type="submit"]{
+        max-width: 90%;
+        margin-right: auto;
+    }
+    .inst-sec .col-xl-6{
+        order: 12;
+    }
+    .header{
+        padding-top: 10px;
+    }
+    #logo{
+        max-width: 135px;
+        margin: auto;
+        display: block;
+    }
+    .helper{
+        height: 150px;
+        background-image: url(https://assets.betalabs.net/production/easydinner/images/stores/1/mobile-helper.png) !important;
+        margin-bottom: 0;
+    }
+    .inst .container:before{
+        content: none;
+    }
+    .produto-item{
+        max-width: 100%;
+    }
+    .personalizar .inst .container a.btn-orange{
+        margin-right: auto;
+        order: 12;
+    }
+    .personalizar .inst .container h2.sri.orange, .personalizar .inst .container p{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,97 @@
+- Pegar todos os datas providers via js
+fetch(window.location.href, {
+     headers: {
+       'Accept'           : 'application/json',
+       'Content-Type'     : 'application/json',
+       'X-Requested-With' : 'XMLHttpRequest'
+     }
+   }).then(response => response.json()).then(data => console.log(data))
+
+- Valor de campo extra do tipo Checkbox em um Produto
+$item->extraFields->get('customizavel')->values->first()->extraFieldOption->key; // chave da opção definida no cadastro do campo extra
+$item->extraFields->get('customizavel')->values->first()->extraFieldOption->label; // label da opção definida no cadastro do campo extra
+
+-Entidade 
+@foreach ($pulseira->tamanho->options as $tam)
+	<option value="{{ $tam->label }}">{{ $tam->label }}</option>
+@endforeach
+
+- exibir direto o primeiro registro de uma entidade
+$entidade->records->first()->campo_extra->values->first()->value
+
+redirecionar após mensagem 
+CanopusEventCenter.addListener('CostumerMessage.Triggered', function(dados) {
+	window.location.href = "/";
+});
+
+
+- Exemplo fudido do CPS
+for (var key in record.data[0]) {
+	if (record.data[0].hasOwnProperty(key)) {
+		$('[name=' + key + ']').val(record.data[0][key]);
+	}
+}
+
+-impedir de abrir o checkout preview
+CanopusEventCenter.addListener('Checkout.Preview.Building', function(e) { e.preventDefault() })
+
+
+bride
+@if($item->extraFields->get('classe')->values->first()->extraFieldOption->label == "Noivo vinho") noivo @else bib-color @endif
+
+
+//ordem alfabetica listagem de categorias
+@foreach($child->children->sortBy(function($kid) {
+   return $kid->name;
+}) as $kid)
+
+//ordem alfabetica categorias tagueadas
+@foreach($temas->collection->sortBy(function($item) {
+  return $item->name;
+}) as $item)
+
+
+//checkbox Tue Shop de Flags
+@foreach($categoria->extraFields->get('flags')->values as $tam)
+   <div>{{ $tam->extraFieldOption->label }}</div>
+@endforeach
+
+
+
+Toast
+iziToast.success({
+       title: 'Produtos adicionados ao carrinho com sucesso!',
+       timeout: 3000
+     })	
+
+Categories In
+$('.in').on('click', function(){
+            
+        var url = window.location.href;
+	var cat = $(this).attr('teste');
+            if (url.match(/\?./)) {
+               window.location.href = url+','+cat;
+            }else{
+                window.location.href = url+'?categories-in='+cat;
+            }
+        });
+
+
+script finalização de compra
+<script>
+    let fbPurchase = setInterval(function() {
+       if( window.location.pathname == '/checkout/completed' ) {
+         clearInterval(fbPurchase)
+
+         fbq('track', 'Purchase')
+
+         // Event snippet for Assinatura FDC conversion page
+         gtag('event', 'conversion', {
+           'send_to': 'AW-771084524/ND2sCLLO8KUBEOyh1-8C',
+           'value': parseFloat( $('completed-resume .canopus-cart-total .value').text().replace('R$', '') ),
+           'currency': 'BRL',
+           'transaction_id': $('completed-title .title-id').text()
+         });
+       }
+     })
+</script>

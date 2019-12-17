@@ -1,0 +1,32 @@
+@media screen and (max-width: 1170px) {
+	.page, .site {
+		width: 100%;
+    }
+    .site{
+        padding: 0px 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .half-col{
+        max-width: 100%;
+        width: 100%;
+    }
+    .right-col, .left-col{
+        max-width: 100%;
+        padding:  25px 0px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .left-col h2 {
+        font-size: 38px
+    }
+    
+}

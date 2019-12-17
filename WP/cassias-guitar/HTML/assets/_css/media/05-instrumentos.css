@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px){
+    .card{
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+        margin-bottom: 50px
+    }
+    .cat-instrumentos{
+        padding: 20px;
+    }
+}

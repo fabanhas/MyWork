@@ -1,0 +1,252 @@
+@media screen and (max-width: 768px){
+    #header{
+        position: relative;
+        height: auto;
+        top: 0;
+        padding: 20px 0;
+        align-items: baseline;
+    }
+    .hamb-icon {
+        width: 30px;
+        height: 43px;
+        /* position: absolute; */
+        display: inline-block;
+        z-index: 500;
+        margin-left: 10px;
+        position: relative;
+        top: 10px;
+
+    }
+    .hamb-icon span {
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        transition-duration: 0s;
+        transition-delay: .2s;
+    }
+    .hamb-icon span, .hamb-icon span:before, .hamb-icon span:after{
+        width: 30px;
+        height: 5px;
+        background-color: #BD756D;
+        display: block;
+    }
+    .hamb-icon span:before, .hamb-icon span:after {
+        content: "";
+        position: absolute;
+    }
+    .hamb-icon span:before {
+        margin-top: -10px;
+        transition-property: margin,transform;
+        transition-duration: .2s;
+        transition-delay: .2s,0s;
+    }
+    .hamb-icon span:after {
+        margin-top: 10px;
+        transition-property: margin,transform;
+        transition-duration: .2s;
+        transition-delay: .2s,0s;
+    }
+    .hamb-icon.open {
+        position: absolute;
+        z-index: 16999;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-admin ul li{
+        display: none;
+    }
+    .menu-admin ul li:last-of-type{
+        display: block;
+    }
+    .menu-admin{
+        width: 50px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .row-cats{
+        position: relative;
+    }
+    .row-cats:after{
+        content: "";
+        position: absolute;
+        background-image: url(https://assets.betalabs.net/production/cloe/images/stores/1/rosa-mobile.png);
+        width: 400px;
+        height: 254px;
+        left: -10px;
+        top: 0;
+        z-index: -1;
+        right: -10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .news{
+        background-image: url(https://assets.betalabs.net/production/cloe/images/stores/1/news-mobile.png);
+        height: auto;
+        min-height: 400px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .categorias{
+        overflow-x: hidden;
+    }
+    .news .row > div{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .footer .d-flex img, .footer .col-md-2 img{
+        margin-bottom: 1rem;
+    }
+    .menu{
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        background-color: #000;
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+    }
+    .menu.open{
+        left: 0;
+        display: block;
+    }
+    .menu ul{
+        flex-wrap: wrap;
+        
+    }
+    .menu ul li{
+        width: 100%;
+        height: px;
+    }
+
+    /* Categoria */
+    /* categoria */
+    .flex{
+        flex-wrap: wrap;
+    }
+    .item {
+        max-width: 100%;
+    }
+    .menu__categorias {
+        width: 100%;
+    }
+    .vitrine.interna{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .produto{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .filter-mob > ul > li > a {
+        font-size: 15px;
+        display: block;
+        margin: 5px 0;
+    }
+    .filtros .left{
+        flex-wrap: wrap;
+    }
+    .filtros .left .ordenar{
+        max-width: 100%;
+        margin: 0;
+    }
+    .filtros .left .qtd-por-pagina{
+        max-width: 100%;
+        width: 100%;
+    }
+    .filtros{
+        padding-top: 1rem;
+        justify-content: flex-start;
+        border: none;
+    }
+    .produto__img{
+        max-width: 100%;
+    }
+    .produto__title{
+        margin-bottom: 0px;
+    }
+    .produto_sub{
+        margin-bottom: 0;
+    }
+    .categoria{
+        padding-top: 65px;
+    }
+    .filtros .left .ordenar select, .filtros-mobile{
+        max-width: 120px;
+        border: 1px solid #E5E5E5;
+        text-transform: lowercase;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .filtros-mobile{
+        position: relative;
+        margin-right: 0.5rem
+    }
+    .filtros-mobile aside{
+        display: none;
+    }
+    .filtros .left .ordenar select + span{
+        display: none;
+    }
+    .filtros .left{
+        max-width: 120px;
+    }
+    .fancybox-content{
+        max-width: 320px;
+        padding: 25px 10px;
+        width: 100%;
+    }
+    .filtros-mobile{
+        display: block;
+    }
+    .flex.relacionados{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cores ul li:nth-child(6){
+        margin-left: 0;
+    }
+    .cores ul li:nth-child(7){
+        margin-left: 0.5rem;
+    }
+    .btn-comprar{
+        margin: 1rem auto;
+    }
+    .categoria hr{
+        margin: 1.5rem 0;
+    }
+    #search{
+        max-width: 90%;
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .helper a{
+        font-size: 48px;
+    }
+    .menu__categorias > ul{
+        padding: 20px;
+        max-width: 50%;
+    }
+    .menu__categorias > ul:first-of-type{
+        max-width: 100%;
+    }
+    .menu__categorias > ul li{
+        display: none;
+    }
+    .menu__categorias > ul h2{
+        margin: 0;
+    }
+
+    /* Categoria */
+    /* Produtos */
+    .thumbs{
+        display: flex;
+        justify-content: center;
+    }
+    .thumbs button{
+        margin: 0 5px;
+    }
+    /* End produtos */
+}

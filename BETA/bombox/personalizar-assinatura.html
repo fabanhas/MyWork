@@ -1,0 +1,133 @@
+@extends(engine_view('base'))
+@section('conteudo')
+@section('title', 'Personalizando sua assinatura')
+
+
+{{ setter('plano', app('request')->input('plano')) }}
+<div id="id-plano" style="display:none">{{ getter('plano') }}</div>
+{{ setter('qnt-boxes', app('request')->input('qnt-boxes')) }}
+<div id="qnt-boxes" style="display:none">{{ getter('qnt-boxes') }}</div>
+{{ setter('nome-plano', app('request')->input('nome-plano')) }}
+<div id="nome-plano" style="display:none">{{ getter('nome-plano') }}</div>
+
+<div id="div-title-personalizar-assinatura">
+  <div class="center">
+    <div>
+      <div id="title-personalizar-assinatura">
+        Assinatura {{ getter('nome-plano') }}
+      </div>
+      <div id="subtitle-personalizar-assinatura">
+        Você selecionou <span id="qnt-sel">0</span> de <span id="qnt-total">{{ getter('qnt-boxes') }}</span> pratos
+      </div>
+    </div>
+    <div>
+        <a href="" class="btn btn-white btn-finalizar-assinatura"><img src="{{ path('icon-cart-green.png') }}"> Finalizar assinatura</a>
+    </div>
+  </div>
+</div>
+
+<div id="conteudo-personalizar-assinatura">
+    <div class="center">
+        @if($disponivelParaAssinar->collection->count() > 0)
+        <div class="row">
+            @foreach($disponivelParaAssinar->collection as $item)
+              @itemAvailable($item)
+              <div class="col-lg-3 col-sm-12">
+                @include(engine_view('produto-item-assinar'))
+              </div>
+              @enditemAvailable
+            @endforeach
+        </div>
+        @endif
+        <div class="text-center">
+            <a href="" class="btn btn-green btn-finalizar-assinatura"><img src="{{ path('icon-cart-desktop-white.png') }}"> Finalizar assinatura</a>
+        </div>
+    </div>
+</div>
+
+
+@push('scripts')
+<script>
+    var $plano = $('#id-plano').html();
+    var $qntBoxes = $('#qnt-boxes').html();
+    console.log($plano);
+    console.log($qntBoxes);
+    
+    var $arrayPratos = [];
+    
+    var $btnPlus = $('.btn-plus-assinar');
+    var $btnMinus = $('.btn-minus-assinar');
+    var $counter;
+    var $input;
+    var $nome;
+    var $quantidadeTotal = 0;
+    $btnPlus.each(function(){
+      $(this).on('click', function(){
+        $input = $(this).parent().find('.qnt-comprar');
+        $nome = $(this).parent().parent().find('.title-prato-assinar').html();
+        addInput($input, $nome, $arrayPratos, $quantidadeTotal);
+      });
+    });
+    
+    $btnMinus.each(function(){
+      $(this).addClass('disabled');
+      $(this).on('click', function(){
+        $input = $(this).parent().parent().find('.qnt-comprar');
+        $nome = $(this).parent().parent().find('.title-prato-assinar').html();
+        subtractInput($input, $nome, $arrayPratos, $quantidadeTotal);
+      });
+    });
+    
+    function addInput(input, nomeItem, array, qntTotal) {
+      input.parent().find($btnMinus).removeClass('disabled');
+      $counter = input.html();
+      $counter++;
+      input.html($counter);
+      
+      
+      if(array.length > 0) {
+        var $adicionou = false;
+        for(var x = 0; x < array.length; x++) {
+          if(array[x].nome == nomeItem) {
+            array[x].qnt = array[x].qnt + 1;
+            console.log(array, ' ja tinha')
+            $adicionou = true;
+            break;
+          }
+        }
+        if(!$adicionou) {
+            array.push({ nome: nomeItem, qnt: 1 })
+            console.log(array, ' nao tinha')
+        }
+      } else {
+        array.push({ nome: nomeItem, qnt: 1 })
+        console.log(array, ' array antes vazia');
+      }
+    }
+    
+    function subtractInput(input, nomeItem, array, qntTotal) {
+      input.parent().find($btnMinus).removeClass('disabled');
+      $counter = input.html();
+      if($counter > 0) {
+        $counter--;
+        input.html($counter);
+        
+        for(var y = 0; y < array.length; y++) {
+          if(array[y].nome == nomeItem) {
+            array[y].qnt = array[y].qnt - 1;
+            console.log(array, ' item deletado')
+            break;
+          }
+        }
+      }
+      if($counter == 0) {
+        $btnMinus.addClass('disabled');
+      }
+    }
+</script>
+@endpush
+
+
+
+
+@endsection

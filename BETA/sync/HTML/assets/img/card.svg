@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.258" height="18.292" viewBox="0 0 27.258 18.292">
+  <g id="credit-card-back-side" transform="translate(0 -40.463)">
+    <path id="Caminho_14" data-name="Caminho 14" d="M24.15,40.463H3.108A3.111,3.111,0,0,0,0,43.571V55.647a3.111,3.111,0,0,0,3.108,3.108H24.15a3.111,3.111,0,0,0,3.108-3.108V43.571A3.112,3.112,0,0,0,24.15,40.463ZM3.108,42.236H24.15a1.337,1.337,0,0,1,1.335,1.335v1.185H1.773V43.571A1.337,1.337,0,0,1,3.108,42.236ZM24.15,56.982H3.108a1.337,1.337,0,0,1-1.335-1.335V48.588H25.485v7.059A1.337,1.337,0,0,1,24.15,56.982Z" transform="translate(0)" fill="#fff"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="0.971" cy="0.971" r="0.971" transform="translate(21.972 52.854)" fill="#fff"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="0.971" cy="0.971" r="0.971" transform="translate(19.329 52.854)" fill="#fff"/>
+    <circle id="Elipse_4" data-name="Elipse 4" cx="0.971" cy="0.971" r="0.971" transform="translate(16.686 52.854)" fill="#fff"/>
+    <circle id="Elipse_5" data-name="Elipse 5" cx="0.971" cy="0.971" r="0.971" transform="translate(10.357 52.854)" fill="#fff"/>
+    <circle id="Elipse_6" data-name="Elipse 6" cx="0.971" cy="0.971" r="0.971" transform="translate(7.714 52.854)" fill="#fff"/>
+    <circle id="Elipse_7" data-name="Elipse 7" cx="0.971" cy="0.971" r="0.971" transform="translate(13 52.854)" fill="#fff"/>
+  </g>
+</svg>

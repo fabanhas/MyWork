@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="mobile-menu">
+    <ul>
+        <li>
+            <a href="">office chair</a>
+        </li>
+        <li>
+            <a href="">collaborative</a>
+        </li>
+        <li>
+            <a href="">coletividade</a>
+        </li>
+        <li>
+            <a href="">móveis</a>
+        </li>
+        <li>
+            <a href="">outlet</a>
+        </li> 
+    </ul>
+</nav>
+<div id="content">
+<header class="flex-menu" data-aos="fade-left" data-aos-delay="300">
+    <div class="container">
+        <nav>
+            <a href="javascript:;" class="menu-btn">
+                <span></span>
+            </a>
+            <a href="" class="logo">
+                <img class="img-fluid" src="assets/img/logo-orange.png" alt="">
+            </a>
+            <ul class="mobile-menu">
+                <li>
+                    <a href="">office chair</a>
+                </li>
+                <li>
+                    <a href="">collaborative</a>
+                </li>
+                <li>
+                    <a href="">coletividade</a>
+                </li>
+                <li>
+                    <a href="">móveis</a>
+                </li>
+                <li>
+                    <a href="">outlet</a>
+                </li> 
+            </ul>
+            <ul class="icons-list">
+                <li>
+                    <a href="">
+                        <span class="search"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="user"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="cart"></span>
+                        <span class="qtd-cart">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section class="categoria">
+        <div class="container">
+            <div class="flex">
+                <aside class="menu__categorias" id="filters" data-aos="fade-in" >
+                    <ul data-selectable="true">
+                        <h2 >Linhas</h2>
+                        <div class="collapse-div">
+                            <li class="active">
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                office Chairs
+                                </a>
+                            </li> 
+                            <li>
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                collaborative
+                                </a>
+                            </li> 
+                            <li>
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                auditorio
+                                </a>
+                            </li> 
+                        </div>
+                    </ul>
+                    <ul data-selectable="true">
+                        <h2 >Cores</h2>
+                        <div class="collapse-div">
+                            <li class="active">
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                office Chairs
+                                </a>
+                            </li> 
+                            <li>
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                collaborative
+                                </a>
+                            </li> 
+                            <li>
+                                <a class="in">
+                                <input type="checkbox"/>
+                                <label for="formatos0"></label>
+                                auditorio
+                                </a>
+                            </li> 
+                        </div>
+                    </ul>
+                </aside>
+
+            <section class="vitrine interna">
+                <section class="filtros">
+                    <div class="filtros-mobile" data-fancybox data-src="#filters" data-touch="false">
+                      filtrar
+                    </div>
+                  <div class="left">
+                    <div class="ordenar">
+                      <select name="ordenar" id="ordenar">
+                        <option value="selecione" disabled selected style="color:gray" value="null">ORDENAR POR</option>
+                        <option value="preco_asc">Maior valor</option>
+                        <option value="preco_desc">Menor valor</option>
+                      </select>
+                      <span>+</span>
+                    </div>
+                  </div>
+                  
+                </section>
+
+
+                <div class="flex">
+                    <article class="produto" data-aos="fade">
+                        <div class="produto__img">
+                            <a href="/"><img src="assets/img/p1.png" alt="Produto"></a>
+                        </div>
+                        <a href="/" class="produto__title">Captain Lounge</a>
+                        <p class="produto_sub">Baldanzi & Novelli</p>
+                        <p class="produto__price">R$ 399,90</p>
+                    </article>
+
+                    <article class="produto" data-aos="fade">
+                        <div class="produto__img">
+                        <a href="/"><img src="assets/img/p2.png" alt="Produto"></a>
+                        </div>
+                        <a href="/" class="produto__title">Coral</a>
+                        <p class="produto_sub">Ton Haas</p>
+                        <p class="produto__price">R$ 399,90</p>
+                    </article>
+
+                    <article class="produto" data-aos="fade">
+                        <div class="produto__img">
+                        <a href="/"><img src="assets/img/p3.png" alt="Produto"></a>
+                        </div>
+                        <a href="/" class="produto__title">Fly</a>
+                        <p class="produto__price">R$ 399,90</p>
+                    </article>
+                  
+                </div>
+              </section>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <p class="title">Institucional</p>
+                        <a href="/quem-somos">Quem Somos</a>            
+                        <a href="/seguranca">Segurança</a>
+                        <p class="title">Serviços</p>
+                        <a href="/central-de-atendimento">Central de Atendimento</a>
+                        <a href="/contato">Fale Conosco</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="title">Dúvidas</p>
+                        <a class="logado" href="/account/orders">Meus Pedidos</a>
+                        <a href="/como-comprar">Como Comprar</a>
+                        <a href="/termos-e-condicoes">Termos e Condições</a>
+                        <a href="/entrega">Entrega</a>
+                        <a href="/troca-e-devolucao">Troca e devolução</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="title">Atendimento</p>
+                        <p>Av. Papa João Paulo 1, 1.849</p>
+                        <p>Guarulhos - SP</p>
+                        <p>CEP: 07170-350</p>
+                        <p class="phone">+55 11 2431-5511</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="title">Redes Sociais</p>
+                        <div class="row">
+                            <div class="col">
+                                <a href="" class="social-link">
+                                    <img class="img-fluid" src="{{ path('face.png') }}" alt="">
+                                </a>
+                                <a href="" class="social-link">
+                                    <img class="img-fluid" src="{{ path('insta.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <p class="title">Formas de Pagamento</p>
+                        <img src="{{ path('pagamento.png') }}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <p class="title">Segurança</p>
+                        <img src="{{ path('ssl.png') }}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="img-fluid" src="{{ path('logo-orange.png') }}" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <p>CNPJ: 00.000.000/0001-00</p>
+                    </div>
+                    <div class="ml-md-auto col-md-2 col-6">
+                        <a href="https://betalabs.com.br" target="_blank" rel="noopener">
+                            <img src="{{ path('beta.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-6">
+                        <a href="https://followupcomunicacao.com.br" target="_blank" rel="noopener">
+                            <img src="{{ path('fup.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{{ canopus_js() }}"></script>
+<script src="{{ script('theme.js') }}"></script>
+<script>
+  AOS.init();
+</script>

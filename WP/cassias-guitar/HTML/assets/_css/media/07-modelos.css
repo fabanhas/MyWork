@@ -1,0 +1,45 @@
+
+@media screen and (max-width:1280px){
+    .slick-next{
+        right:-10px!important}
+    .slick-prev{
+        left:-10px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slick-next {
+        right: -30px !important;
+    }
+    .slick-prev {
+        left: -30px !important;
+    }
+    #galeria .slider-item {
+        width: 70%;
+        margin: 0 50px;
+    }
+    .slider-title h2{
+        font-size: 27px;
+    }
+    .body img, .arm img{
+        position: relative;
+    }
+    .acabamento h2, .arm h2, .body h2, .eletrica h2, .hardware h2 {
+        font-size: 48px;
+    }
+    .row-body{
+        flex-direction: column;
+    }
+    .slider-title {
+        text-align: center;
+        left: 0;
+        bottom: -40%;
+    }
+}
+@media screen and (max-width: 425px){ 
+    .slick-next {
+        right: -50px !important;
+    }
+    .slick-prev {
+        left: -40px !important;
+    }
+}

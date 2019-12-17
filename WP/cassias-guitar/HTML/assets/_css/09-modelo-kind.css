@@ -1,0 +1,55 @@
+.galeria{
+    padding: 50px 0px;
+}
+.kind-body{
+    padding: 50px 0;
+}
+.vt h1{
+    color: #fff;
+    font-size: 65px;
+    font-weight: bold;
+}
+#galeria .slider-item{
+    margin: 0px 10px;
+}
+.entre-contato{
+    background-color: #eee;
+    padding: 100px 0;
+    position: relative;
+}
+.entre-contato hr{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%
+}
+.entre-contato h2{
+    color: #5E5E5E;
+    text-align: center;
+    margin: 25px 0;
+}
+.entre-contato h3{
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.entre-contato p{
+    font-size: 23px;
+    font-weight: 500;
+    color: #5E5E5E;
+}
+p.email{
+    font-size: 18px;
+}
+a.wpp{
+    font-size: 25px;
+    font-weight: 500;
+    color: #5E5E5E;
+}
+a.wpp i{
+    font-size: 45px;
+}
+.galeria h2{
+    text-align: center;
+    color: #5E5E5E;
+    margin: 20px 0;
+}

@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+@font-face {
+  font-family: 'hot_dealsregular';
+  src: url('https://assets.betalabs.net/production/genionacaixa/fonts/stores/1/hot-deals-webfont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #404040;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'hot_dealsregular', cursive;
+}
+
+a {
+  color: #573E89;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background: #3D326A url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/bg-triangules.png') repeat top center;
+}
+
+  @media (min-width: 992px) {
+    body.page header {
+      height: 145px;
+    }
+  }
+
+/* backgrounds */
+.bg-purle {
+  background-color: #3D326A;
+  z-index: 1;
+}
+
+.bg-yellow {
+  background-color: #FFD540;
+}
+
+.bg-gray {
+  background-color: #F2F2F2 !important;
+}
+
+.bg-about {
+  background-color: #FFD540;
+}
+
+  @media (min-width: 992px) {
+    .bg-about {
+      background: url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/bg-about.png') no-repeat top center;
+      height: 524px;
+      z-index: 2;
+      margin-top: -21px;
+    }
+  }
+
+.bg-diamonds {
+  background-color: #42C8F5;
+  background: #42C8F5 url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/bg-diamonds.png') repeat-x top center;
+  min-height: 719px;
+}
+
+  @media (min-width: 992px) {
+    .bg-diamonds {
+      background-color: transparent;
+      z-index: 1;
+      margin-top: -24px;
+    }
+  }
+
+/* Texts */
+.text-purple {
+  color: #3D326A;
+}
+
+.text-blue {
+  color: #42C8F5;
+}
+
+.text-yellow {
+  color: #FFD540;
+}
+
+.text-title {
+  font-size: 48px;
+}
+
+/* Buttons */
+.btn-yellow {
+  background-color: #FFD540;
+  color: #3D326A;
+}
+
+.btn-lightblue {
+  background-color: #42C8F5;
+  color: #FFF;
+}
+
+.btn-blue {
+  background-color: #199AC5;
+  color: #FFF;
+}
+
+.btn-purple {
+  background-color: #3D326A;
+  color: #FFF;
+}
+
+body.page header .logo {
+    margin-bottom: -100px;
+}
+
+@media (min-width: 992px) {
+  header .logo {
+    position: absolute;
+    top: 110px;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+  }
+  header .content {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  body.page header .logo {
+    margin-bottom: 0px;
+  }
+}
+
+nav a {
+  color: #FFF;
+  font-size: 17px;
+}
+
+  nav a:hover {
+    color: #FFD540;
+  }
+
+  nav .badge {
+    color: #3D326A;
+    font-weight: 400;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, .2);
+  }
+
+    .navbar-toggler i {
+      color: #FFD540;
+    }
+
+.rounded-15 {
+  border-radius: 15px;
+}
+
+.mascot {
+  top: 220px;
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.line-blue {
+  background: url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/line-blue.png') no-repeat 0px 30px;
+  background-size: contain;
+}
+
+.line-yellow {
+  background: url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/line-yellow.png') no-repeat 0px 50px;
+  background-size: contain;
+}
+
+.line-purple {
+  background: url('https://assets.betalabs.net/production/genionacaixa/images/stores/1/line-purple.png') no-repeat 0px 50px;
+  background-size: contain;
+}
+
+  .plans ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    .plans ul li:before {
+      content: '✓';
+      margin-right: 5px;
+      color: #BFBFBF;
+    }
+
+  .plans .price {
+    font-family: 'hot_dealsregular', cursive;
+  }
+
+  .plans sup {
+    font-size: 15px;
+    top: -1.5em;
+  }
+
+  .plans .btn {
+    margin-top: -30px;
+  }
+
+/* @media (min-width: 992px) {
+  .secret p {
+    column-count: 2;
+  }
+} */
+
+footer {
+  font-size: 13px;
+  color: #8C8C8C;
+}
+
+  footer .logo-footer {
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer strong {
+    color: #42C8F5;
+    font-size: 11px;
+  }
+
+  footer a {
+    color: #8C8C8C;
+  }
+
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    footer ul li {
+      padding: 2px 0;
+    }
+
+
+p.breadcrumb {
+  background: transparent;
+  text-align: center;
+  display: block;
+}
+
+  p.breadcrumb a, p.breadcrumb .current{
+    margin: 0 10px;
+    color: #262626;
+    font-size: 12px;
+    text-transform: lowercase;
+  }
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .sidebar ul li {
+    padding: 5px 0;
+  }
+
+  .sidebar ul li a {
+    color: #262626;
+  }
+
+  .sidebar ul li a:hover, .sidebar ul li a.active {
+    color: #42C8F5;
+  }
+
+.interna-content {
+  margin-bottom: 150px;
+}
+
+.interna-content .text {
+  margin-bottom: 30px;
+}
+
+#form-contato {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#form-contato > div:first-child {
+  width: 41.5%; 
+}
+
+#form-contato > div:last-child {
+  width: 54%; 
+}
+
+#form-contato label {
+  font-family: 'Lato';
+  font-size: 17px;
+  font-weight: 700;
+  color: #707070;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#form-contato input[type=text],
+#form-contato select {
+  width: 100%;
+  max-width: 370px;
+  min-height: 44px;
+  border: 1px solid #D9D9D9;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+#form-contato textarea {
+  width: 100%;
+  min-height: 204px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #666666;
+}
+
+#form-contato input[type=submit] {
+  width: 234px;
+  min-height: 54px;
+  display: block;
+  float: right;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Lato';
+  color: #FFF;
+  background-color: #573E89;
+  border-radius: 30px;
+  border: 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 850px) {
+  #form-contato {
+    display: block;
+    padding: 0 2.5%;
+  }
+
+  #form-contato > div {
+    width: 100%;
+  }
+}

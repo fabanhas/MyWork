@@ -1,0 +1,21 @@
+@media screen and (max-width: 1400px){ 
+    #produzidas .slick-next{
+        right: 25px !important;
+    }
+    #produzidas .slick-prev{
+        left: -25px !important;
+    }
+    
+ }
+ @media screen and (max-width: 768px){ 
+    #produzidas .slick-next{
+        right: -50px !important;
+    }
+    #produzidas .slick-prev{
+        left: -25px !important;
+    }
+    #galeria img{
+        position: relative;
+        left: 15px;
+    }
+ }

@@ -1,0 +1,70 @@
+.title {
+    background: url(assets/img/bg-interna-title.jpg) no-repeat scroll center top #ECEFF0;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+.title h2{
+    color: #201F1F;
+    font-size: 30px;
+    font-weight: 700;
+}
+.title p{
+    font-size: 12px;
+}
+.p-50{
+    padding: 20px 50px;
+}
+.p-50 h3{
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.p-50 p{
+    margin: 1rem 0;
+}
+.phone{
+    font-size: 23px;
+    font-weight: 700;
+}
+.email{
+    font-size: 18px;
+    font-weight: 600;
+}
+.p-50 span{
+    font-size: 16px;
+}
+.p-50 i{
+    font-size: 30px;
+}
+.form-contato label{
+    max-width: 25%;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.form-contato input, .form-contato textarea{
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 0;
+    resize: none;
+}
+.form-contato .row{
+    margin: 25px 0;
+}
+.form-contato input[type=submit]{
+    max-width: 150px;
+    margin-left: auto;
+    display: block;
+    background-color: rgb(102,102,102);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.wpcf7-form-control-wrap{
+    max-width: 75%;
+    width: 100%;
+}

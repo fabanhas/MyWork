@@ -1,0 +1,73 @@
+@media screen and (max-width: 1440px){ 
+    .nossa-casa .container-fluid .row .col-md-6 .img-fluid{
+        min-height: 335px;
+    }
+ }
+ @media screen and (max-width: 1280px){ 
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(3){
+        margin-right: 10px;
+    }
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(2), .nossa-casa .container-fluid .row .col-md-6:nth-child(6){
+        max-width: 48%;
+    }
+  }
+@media screen and (max-width: 768px){
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(3), .nossa-casa .container-fluid .row .col-md-6:nth-child(2), .nossa-casa .container-fluid .row .col-md-6:nth-child(6) {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-left: 0;
+    }
+    .dev .container{
+        flex-wrap: wrap;
+    }
+    .flex{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #logo-footer{
+        display: block;
+        margin: 1rem auto;
+    }
+    .nossa-casa .container-fluid{
+        padding: 10px;
+    }
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(3){
+        padding-left: 40px;
+    }
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(6):before{
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(3):before{
+        bottom: -50px;
+        top: unset;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: 0;
+    }
+    .nossa-casa .container-fluid .row .col-md-6:nth-child(2):before{
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #footer{
+        height: auto;
+        padding: 30px 0;
+    }
+    .nossa-casa .container-fluid .row .col-md-6 .img-fluid{
+        min-height: auto;
+    }
+}

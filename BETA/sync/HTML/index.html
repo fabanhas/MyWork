@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sync</title>
+
+	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tabby.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<header class="header">
+		<span class="header-frete">
+			<i class="icon icon__heart"></i>
+			Frete grátis nas compras acima de R$ 399
+		</span>
+		<div class="wrap">
+			<div class="header-logo">
+				<a href="javascript:;">
+					<i class="icon icon__sync"></i>
+				</a>
+			</div>
+			<div class="grid">
+				<div class="header-wrap mobile">
+					<a href="javascript:;" data-fancybox data-src="#menu"><i class="icon icon__hamb"></i></a>
+					<a href="javascript:;"><i class="icon icon__sync"></i></a>
+					<div class="flex">
+						<a href="javascript:;"><i class="icon icon__user"></i></a>
+						<a href="javascript:;"><i class="icon icon__cart"></i></a>
+					</div>
+				</div>
+				<div class="header-menu">
+					<a class="has-submenu" href="javascript:;" data-fancybox data-src="#menu">Todas as <br /> categorias</a>
+					<a href="javascript:;">Pré-maquiagem</a>
+					<a href="javascript:;">Maquiagem</a>
+					<a href="javascript:;">Paletas</a>
+					<a href="javascript:;">Pincel</a>
+					<a href="javascript:;">Acessórios e kits</a>
+					<a href="javascript:;">Corpo e rosto</a>
+					<a href="javascript:;">Presente</a>
+					<a href="javascript:;">Marcas</a>
+				</div>
+				<div class="header-wrap">
+					<div class="header-search">
+						<form action="#">
+							<input type="text" name="busca" placeholder="Encontre um produto">
+							<input type="submit" id="buscar">
+							<label for="buscar">
+								<i class="icon icon__search"></i>
+							</label>
+						</form>
+					</div>
+					<div class="desktop-admin flex">
+						<a href="javascript:;"><i class="icon icon__user"></i></a>
+						<a href="javascript:;"><i class="icon icon__cart"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="menu" style="display: none" data-selectable="true">
+		<div class="wrap flex">
+			<a class="has-submenu" href="javascript:parent.$.fancybox.close();">Todas as categorias</a>
+			<ul>
+				<a href="">PRÉ-MAQUIAGEM</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+				<li><a href="">SUBCATEGORIA 05</a></li>
+				<li><a href="">SUBCATEGORIA 06</a></li>
+			</ul>
+			<ul>
+				<a href="">MAQUIAGEM</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+				<li><a href="">SUBCATEGORIA 05</a></li>
+				<li><a href="">SUBCATEGORIA 06</a></li>
+			</ul>
+			<ul>
+				<a href="">PALETAS</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+				<li><a href="">SUBCATEGORIA 05</a></li>
+				<li><a href="">SUBCATEGORIA 06</a></li>
+			</ul>
+			<ul>
+				<a href="">PINCEL</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+				<li><a href="">SUBCATEGORIA 05</a></li>
+				<li><a href="">SUBCATEGORIA 06</a></li>
+			</ul>
+			<ul>
+				<a href="">ACESSÓRIOS E KITS</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+				<li><a href="">SUBCATEGORIA 05</a></li>
+			</ul>
+			<ul>
+				<a href="">CORPO E ROSTO</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+				<li><a href="">SUBCATEGORIA 03</a></li>
+				<li><a href="">SUBCATEGORIA 04</a></li>
+			</ul>
+			<ul>
+				<a href="">PRESENTE</a>
+				<li><a href="">SUBCATEGORIA 01</a></li>
+				<li><a href="">SUBCATEGORIA 02</a></li>
+			</ul>
+
+		</div>
+		<section class="brands">
+			<div class="wrap flex">
+				<h3 class="head">Marcas</h3>
+				<div class="wrap owl-carousel">
+					<article class="brand">
+						<img src="assets/img/loreal.png" alt="Loreal">
+					</article>
+					<article class="brand">
+						<img src="assets/img/cadiveu.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/azzaro.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/revlon.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/colorama.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/loreal.png" alt="Loreal">
+					</article>
+					<article class="brand">
+						<img src="assets/img/cadiveu.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/azzaro.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/revlon.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/colorama.png">
+					</article>
+				</div>
+			</div>
+		</section>
+	</div>
+	<main>
+		<section class="banners-top">
+			<div class="owl-carousel">
+				<article class="banner-top">
+					<img src="assets/img/banner-home-desktop.jpg" alt="Banner">
+					<a class="banner-btn" href="javascript:;">Veja agora!</a>
+				</article>
+				<!-- <article class="banner-top">
+					<img src="assets/img/banner-home@1x.jpg" alt="Banner">
+					<a class="banner-btn" href="javascript:;">Veja agora!</a>
+				</article> -->
+			</div>
+		</section>
+		<section class="beneficios">
+			<ul>
+				<li>
+					<div>
+						<i class="icon icon__truck"></i>
+					</div>
+					<p><span>Entrega 24h</span> <br /> Baixo custo e rapidez para região metropolitana de Belém / PA</p>
+				</li>
+				<li>
+					<div>
+						<i class="icon icon__boleto"></i>
+					</div>
+					<p><span>5% Desconto</span> <br /> Nos pagamentos via boleto</p>
+				</li>
+				<li>
+					<div>
+						<i class="icon icon__card"></i>
+					</div>
+					<p><span>5x Sem juros</span> <br /> Nos pagamentos com cartão de crédito</p>
+				</li>
+			</ul>
+		</section>
+		<section class="produto-tabs">
+			<h2 class="head">Promoções em destaque</h2>
+			
+				<div class="tab-wrap">
+					<div class="wrap">
+						<ul data-tabs>
+							<li><a data-tabby-default href="#pre-maquiagem">Pré-maquiagem</a></li>
+							<li><a href="#pinceis">Pincéis</a></li>
+							<li><a href="#pele-e-corpo">Pele e corpo</a></li>
+							<li><a href="#batons">Batons</a></li>
+						</ul>
+					</div>
+					
+	
+					<div id="pre-maquiagem">
+						<div class="wrap">
+							<div class="tab-content--wrap owl-carousel">
+								<article class="produto-item">
+									<div class="produto-item--etiquetas">
+										<div><span class="off">-15%</span></div>
+										<div><span class="frete-gratis">Frete grátis</span></div>
+									</div>
+									<div class="produto-item--imgs owl-carousel">
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+									</div>
+									<p class="produto-item--categoria">Azarro</p>
+									<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+									<div class="flex">
+										<p class="produto-item--precoDe">R$ 149,00</p>
+										<p class="produto-item--precoPor">R$ 135,00</p>
+									</div>
+									<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+								</article>
+								<article class="produto-item">
+									<div class="produto-item--etiquetas">
+										<div><span class="off">-15%</span></div>
+										<div><span class="frete-gratis">Frete grátis</span></div>
+									</div>
+									<div class="produto-item--imgs owl-carousel">
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+									</div>
+									<p class="produto-item--categoria">Azarro</p>
+									<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+									<div class="flex">
+										<p class="produto-item--precoDe">R$ 149,00</p>
+										<p class="produto-item--precoPor">R$ 135,00</p>
+									</div>
+									<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+								</article>
+								<article class="produto-item">
+										<div class="produto-item--etiquetas">
+											<div><span class="off">-15%</span></div>
+											<div><span class="frete-gratis">Frete grátis</span></div>
+										</div>
+										<div class="produto-item--imgs owl-carousel">
+											<a href="javascript:;">
+												<img src="assets/img/produto01.png" alt="Produto">
+											</a>
+											<a href="javascript:;">
+												<img src="assets/img/produto01.png" alt="Produto">
+											</a>
+										</div>
+										<p class="produto-item--categoria">Azarro</p>
+										<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+										<div class="flex">
+											<p class="produto-item--precoDe">R$ 149,00</p>
+											<p class="produto-item--precoPor">R$ 135,00</p>
+										</div>
+										<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+									</article>
+									<article class="produto-item">
+											<div class="produto-item--etiquetas">
+												<div><span class="off">-15%</span></div>
+												<div><span class="frete-gratis">Frete grátis</span></div>
+											</div>
+											<div class="produto-item--imgs owl-carousel">
+												<a href="javascript:;">
+													<img src="assets/img/produto01.png" alt="Produto">
+												</a>
+												<a href="javascript:;">
+													<img src="assets/img/produto01.png" alt="Produto">
+												</a>
+											</div>
+											<p class="produto-item--categoria">Azarro</p>
+											<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+											<div class="flex">
+												<p class="produto-item--precoDe">R$ 149,00</p>
+												<p class="produto-item--precoPor">R$ 135,00</p>
+											</div>
+											<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+										</article>
+							</div>
+						</div>
+					</div>
+					<div id="pinceis">
+						<div class="wrap">
+							<div class="tab-content--wrap owl-carousel">
+								<article class="produto-item">
+									<div class="produto-item--etiquetas">
+										<div><span class="off">-15%</span></div>
+										<div><span class="frete-gratis">Frete grátis</span></div>
+									</div>
+									<div class="produto-item--imgs owl-carousel">
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+									</div>
+									<p class="produto-item--categoria">Azarro</p>
+									<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+									<div class="flex">
+										<p class="produto-item--precoDe">R$ 149,00</p>
+										<p class="produto-item--precoPor">R$ 135,00</p>
+									</div>
+									<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+								</article>
+								<article class="produto-item">
+									<div class="produto-item--etiquetas">
+										<div><span class="off">-15%</span></div>
+										<div><span class="frete-gratis">Frete grátis</span></div>
+									</div>
+									<div class="produto-item--imgs owl-carousel">
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+									</div>
+									<p class="produto-item--categoria">Azarro</p>
+									<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+									<div class="flex">
+										<p class="produto-item--precoDe">R$ 149,00</p>
+										<p class="produto-item--precoPor">R$ 135,00</p>
+									</div>
+									<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div id="pele-e-corpo">
+						<div class="tab-content--wrap">
+	
+						</div>
+					</div>
+					<div id="batons">
+						<div class="tab-content--wrap">
+	
+						</div>
+					</div>
+				</div>
+			
+		</section>
+		<section class="brands">
+			<div class="wrap flex">
+				<h3 class="head">Marcas</h3>
+				<div class="wrap owl-carousel">
+					<article class="brand">
+						<img src="assets/img/loreal.png" alt="Loreal">
+					</article>
+					<article class="brand">
+						<img src="assets/img/cadiveu.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/azzaro.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/revlon.png">
+					</article>
+					<article class="brand">
+						<img src="assets/img/colorama.png">
+					</article>
+					<article class="brand">
+							<img src="assets/img/loreal.png" alt="Loreal">
+						</article>
+						<article class="brand">
+							<img src="assets/img/cadiveu.png">
+						</article>
+						<article class="brand">
+							<img src="assets/img/azzaro.png">
+						</article>
+						<article class="brand">
+							<img src="assets/img/revlon.png">
+						</article>
+						<article class="brand">
+							<img src="assets/img/colorama.png">
+						</article>
+				</div>
+			</div>
+			
+		</section>
+		<section class="banners-mid">
+			<div class="wrap flex">
+				<div class="left-col">
+					<article class="banner-mid banner-mid--medio">
+						<a href="javascript:;">
+							<img src="assets/img/banner-medio01.png">
+						</a>
+					</article>
+					<article class="banner-mid banner-mid--medio">
+						<a href="javascript:;">
+							<img src="assets/img/banner-medio02.png">
+						</a>
+					</article>
+				</div>
+				<article class="banner-mid banner-mid--grande">
+					<a href="javascript:;">
+						<img src="assets/img/banner-grande01.png">
+					</a>
+				</article>
+			</div>
+		</section>
+		<section class="produtos-carousel">
+			<h2 class="head">Novidades da loja</h2>
+			<div class="wrap owl-carousel">
+				<article class="produto-item">
+					<div class="produto-item--etiquetas">
+						<div><span class="off">-15%</span></div>
+						<div><span class="frete-gratis">Frete grátis</span></div>
+					</div>
+					<div class="produto-item--imgs owl-carousel">
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+					</div>
+					<p class="produto-item--categoria">Azarro</p>
+					<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+					<div class="flex">
+						<p class="produto-item--precoDe">R$ 149,00</p>
+						<p class="produto-item--precoPor">R$ 135,00</p>
+					</div>
+					<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+				</article>
+				<article class="produto-item">
+						<div class="produto-item--etiquetas">
+							<div><span class="off">-15%</span></div>
+							<div><span class="frete-gratis">Frete grátis</span></div>
+						</div>
+						<div class="produto-item--imgs owl-carousel">
+							<a href="javascript:;">
+								<img src="assets/img/produto01.png" alt="Produto">
+							</a>
+							<a href="javascript:;">
+								<img src="assets/img/produto01.png" alt="Produto">
+							</a>
+						</div>
+						<p class="produto-item--categoria">Azarro</p>
+						<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+						<div class="flex">
+							<p class="produto-item--precoDe">R$ 149,00</p>
+							<p class="produto-item--precoPor">R$ 135,00</p>
+						</div>
+						<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+					</article>
+					<article class="produto-item">
+							<div class="produto-item--etiquetas">
+								<div><span class="off">-15%</span></div>
+								<div><span class="frete-gratis">Frete grátis</span></div>
+							</div>
+							<div class="produto-item--imgs owl-carousel">
+								<a href="javascript:;">
+									<img src="assets/img/produto01.png" alt="Produto">
+								</a>
+								<a href="javascript:;">
+									<img src="assets/img/produto01.png" alt="Produto">
+								</a>
+							</div>
+							<p class="produto-item--categoria">Azarro</p>
+							<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+							<div class="flex">
+								<p class="produto-item--precoDe">R$ 149,00</p>
+								<p class="produto-item--precoPor">R$ 135,00</p>
+							</div>
+							<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+						</article>
+						<article class="produto-item">
+								<div class="produto-item--etiquetas">
+									<div><span class="off">-15%</span></div>
+									<div><span class="frete-gratis">Frete grátis</span></div>
+								</div>
+								<div class="produto-item--imgs owl-carousel">
+									<a href="javascript:;">
+										<img src="assets/img/produto01.png" alt="Produto">
+									</a>
+									<a href="javascript:;">
+										<img src="assets/img/produto01.png" alt="Produto">
+									</a>
+								</div>
+								<p class="produto-item--categoria">Azarro</p>
+								<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+								<div class="flex">
+									<p class="produto-item--precoDe">R$ 149,00</p>
+									<p class="produto-item--precoPor">R$ 135,00</p>
+								</div>
+								<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+							</article>
+							<article class="produto-item">
+									<div class="produto-item--etiquetas">
+										<div><span class="off">-15%</span></div>
+										<div><span class="frete-gratis">Frete grátis</span></div>
+									</div>
+									<div class="produto-item--imgs owl-carousel">
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+										<a href="javascript:;">
+											<img src="assets/img/produto01.png" alt="Produto">
+										</a>
+									</div>
+									<p class="produto-item--categoria">Azarro</p>
+									<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+									<div class="flex">
+										<p class="produto-item--precoDe">R$ 149,00</p>
+										<p class="produto-item--precoPor">R$ 135,00</p>
+									</div>
+									<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+								</article>
+			</div>
+		</section>
+		<section class="produtos-carousel">
+			<h2 class="head">Mais vendidos</h2>
+			<div class="wrap owl-carousel">
+				<article class="produto-item">
+					<div class="produto-item--etiquetas">
+						<div><span class="off">-15%</span></div>
+						<div><span class="frete-gratis">Frete grátis</span></div>
+					</div>
+					<div class="produto-item--imgs owl-carousel">
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+					</div>
+					<p class="produto-item--categoria">Azarro</p>
+					<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+					<div class="flex">
+						<p class="produto-item--precoDe">R$ 149,00</p>
+						<p class="produto-item--precoPor">R$ 135,00</p>
+					</div>
+					<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+				</article>
+				<article class="produto-item">
+					<div class="produto-item--etiquetas">
+						<div><span class="off">-15%</span></div>
+						<div><span class="frete-gratis">Frete grátis</span></div>
+					</div>
+					<div class="produto-item--imgs owl-carousel">
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+						<a href="javascript:;">
+							<img src="assets/img/produto01.png" alt="Produto">
+						</a>
+					</div>
+					<p class="produto-item--categoria">Azarro</p>
+					<p class="produto-item--titulo">Conjunto Pour Homme - Eau de Toilette 2x30ml</p>
+					<div class="flex">
+						<p class="produto-item--precoDe">R$ 149,00</p>
+						<p class="produto-item--precoPor">R$ 135,00</p>
+					</div>
+					<p class="produto-item--parcelas">Em até 5x de R$ 27,00</p>
+				</article>
+			</div>
+		</section>
+		<section class="newsletter">
+			<div class="wrap">
+				<h2>novidades <span>por e-mail</span></h2>
+				<form action="#">
+					<input type="text" name="newsletter-email" placeholder="Digite seu e-mail">
+					<input type="submit" id="btn-newsletter">
+					<label for="btn-newsletter">
+						<i class="icon icon__chevron-right"></i>
+					</label>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer-left">
+				<ul>
+					<a href="javascript:;">
+						<i class="icon icon__sync"></i>
+					</a>
+					<p>
+						Tv. Barão do Triunfo, 3540 Sala 814 <br />
+						Marco - Belém - PA <br />
+						66.095.050
+					</p>
+					<p>
+						SYNC Comércio Varejista de Cosméticos LTDA <br />
+						27.696.498/0001-25 <br />
+						15.562.687-6
+					</p>
+				</ul>
+				<ul>
+					<a href="javascript:;" class="btn-support verde">
+						<i class="icon icon__whatsapp"></i>
+						Atendimento whatsapp
+					</a>
+					<a href="javascript:;" class="btn-support marrom">
+						<i class="icon icon__chat"></i>
+						Atendimento via chat
+					</a>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<div class="footer-up">
+					<ul>
+						<h2>Institucional</h2>
+						<li><a href="javascript:;">Quem somos</a></li>
+						<li><a href="javascript:;">Segurança</a></li>
+					</ul>
+					<ul>
+						<h2>Minha conta</h2>
+						<li><a href="javascript:;">Meus pedidos</a></li>
+						<li><a href="javascript:;">Como comprar</a></li>
+						<li><a href="javascript:;">Entrega</a></li>
+						<li><a href="javascript:;">Termos</a></li>
+						<li><a href="javascript:;">Trocas</a></li>
+					</ul>
+					<ul>
+						<h2>Atendimento</h2>
+						<li><a href="javascript:;">Fale Conosco</a></li>
+						<li><a href="tel:1140044004">(11) 4004-4004</a></li>
+						<li><a href="mailto:email@dominio.com.br">email@dominio.com.br</a></li>
+					</ul>
+					<ul>
+						<h2>Redes Sociais</h2>
+						<div class="flex">
+							<a href="javascript:;"><i class="icon icon__facebook"></i></a>
+							<a href="javascript:;"><i class="icon icon__instagram"></i></a>
+							<a href="javascript:;"><i class="icon icon__whatsapp marrom"></i></a>
+							<a href="javascript:;"><i class="icon icon__youtube"></i></a>
+						</div>
+					</ul>
+				</div>
+				<div class="footer-down">
+					<ul>
+						<h2>Pagamento</h2>
+						<li>
+							<img src="assets/img/bandeiras-desk.png">
+							<!-- <img src="assets/img/bandeiras.png"> -->
+						</li>
+					</ul>
+					<ul>
+						<h2>Segurança</h2>
+						<li>
+							<img src="assets/img/lets-encrypt.png">
+							<br />
+							<img src="assets/img/ebit.png">
+						</li>
+					</ul>
+					<!-- @desktop -->
+						<div class="made-by flex">
+							<a href="https://betalabs.net"><img src="assets/img/betalabs.png" alt="Betalabs"></a>
+							<a href="https://followupcomunicacao.com.br"><img src="assets/img/fup.png" alt="Follow UP Comunicação"></a>
+						</div>
+					<!-- @enddesktop -->
+				</div>
+			</div>
+		</div>
+		<!-- <div class="made-by flex">
+			<a href="https://betalabs.net"><img src="assets/img/betalabs.png" alt="Betalabs"></a>
+			<a href="https://followupcomunicacao.com.br"><img src="assets/img/fup.png" alt="Follow UP Comunicação"></a>
+		</div> -->
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/tabby.polyfills.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			let w = $(window)
+
+			$('.banners-top .owl-carousel').owlCarousel({
+				items: 1,
+				loop: true
+			})
+
+			let tabs = new Tabby('[data-tabs]')
+
+			$('.tab-content--wrap').owlCarousel({
+				items: 1,
+				dots: true,
+				margin: 10,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 2
+					},
+					850: {
+						items: 3
+					},
+					1170: {
+						items: 4
+					}
+				}
+			})
+			$('.produtos-carousel > .owl-carousel').owlCarousel({
+				items: 1,
+				dots: true,
+				margin: 10,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 2
+					},
+					850: {
+						items: 3
+					},
+					1170: {
+						items: 5
+					}
+				}
+			})
+
+			$('.produto-item--imgs').owlCarousel({
+				items: 1,
+				loop: true,
+				dots: true,
+				nav: false,
+				mouseDrag: false,
+				touchDrag: false
+			})
+
+			$('.brands .owl-carousel').owlCarousel({
+				items: 2,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 2000,
+				nav: true,
+				dots: false,
+				navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+				margin: 10,
+				responsive: {
+					0: {
+						items: 2
+					},
+					480: {
+						items: 3
+					},
+					768: {
+						items: 4
+					},
+					1170: {
+						dots: true,
+						nav: true,
+						items: 5
+					}
+				}
+			})
+		})
+	</script>
+</body>
+</html>

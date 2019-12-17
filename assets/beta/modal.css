@@ -1,0 +1,12 @@
+.tingle-modal section button {
+    margin: 10px;
+}
+.tingle-modal section button.half, .tingle-modal section input.half:not([type=checkbox]):not([type=radio]), .tingle-modal section select.half, .tingle-modal section textarea.half {
+    width: calc(50% - 5px)!important;
+}
+button#identification-identification-button-google {
+    background-color: #DD4B39;
+}
+button#identification-identification-button-fb {
+    background-color: #3A5A99;
+}

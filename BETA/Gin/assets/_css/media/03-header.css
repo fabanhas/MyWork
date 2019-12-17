@@ -1,0 +1,160 @@
+@media screen and (max-width: 1600px){ 
+    ul.left{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 1366px){ 
+    ul.left li, ul.right li{
+        margin: 0 0.5rem;
+    }
+    .header-club{
+        padding: 15px 25px;
+    }
+    ul.left{
+        max-width: 85%;
+    }
+    .pagin-header{
+        background-size: cover;
+        padding: 0;
+    }
+    .pagin-header h2, .pagin-header p{
+        margin-bottom: 0;
+    }
+    #logo-header{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 1024px){ 
+    .header-club{
+        display: flex;
+    }
+}   
+@media screen and (max-width: 768px){
+    ul.left-interna li{
+        padding-top: 0;
+    }
+    .header-black ul.right.interna {
+        align-items: flex-end !important;
+        padding-left: 0;
+    }
+    .header-black picture img{
+        width: 200px;
+    }
+    .header-black user-black{
+
+    }
+    
+    #logo-header {
+        display: block;
+        margin: auto;
+    }
+    .header-black{
+        position: relative;
+    }
+    .header-club{
+        position: relative;
+        padding: 0;
+    }
+    #mobile-menu{
+        display: none;
+        position: absolute;
+        max-width: 320px;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        z-index: 100;
+        flex-wrap: wrap;
+        padding: 50px;
+        transition: all .5s;
+        left: -100%;
+    }    
+    #mobile-menu.open{
+        display: flex;
+        left: 0;
+        top: 0;
+    }
+    .header-club ul, .header-black ul{
+        flex-wrap: wrap;
+    }
+    .header-black ul li a{
+        color: #fff !important;
+    }
+    .header-black ul.right{
+        border-left: none;
+    }
+    ul.left li{
+        max-width: 100%;
+        width: 100%;
+    }
+    ul.right{
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 2rem;
+    }
+    body.open{
+        position: fixed;
+    }
+    .hamb-icon {
+        width: 30px;
+        height: 43px;
+        position: absolute;
+        display: inline-block;
+        left: 4%;
+        top: 60px;
+        bottom: 0;
+        margin: auto;
+        z-index: 500;
+    }
+    .hamb-icon span:before, .hamb-icon span:after {
+        content: "";
+        position: absolute;
+    }
+    .hamb-icon span:before {
+        margin-top: -10px;
+        transition-property: margin,transform;
+        transition-duration: .2s;
+        transition-delay: .2s,0s;
+    }
+    .hamb-icon span:after {
+        margin-top: 10px;
+        transition-property: margin,transform;
+        transition-duration: .2s;
+        transition-delay: .2s,0s;
+    }
+    .hamb-icon span, .hamb-icon span:before, .hamb-icon span:after {
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        display: block;
+    }
+    .header-black .hamb-icon span,.header-black .hamb-icon span:before,.header-black .hamb-icon span:after{
+        background-color: #000;
+    }
+    .header-black .hamb-icon.open span:before,.header-black .hamb-icon.open span:after{
+        background-color: #fff;
+    }
+    .hamb-icon span {
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        transition-duration: 0s;
+        transition-delay: .2s;
+    }
+    .hamb-icon.open span {
+        background-color: rgba(0,0,0,0);
+        transition-delay: .2s;
+    }
+    .hamb-icon.open span:before {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition-delay: 0s,.2s;
+    }
+    .hamb-icon.open span:after {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition-delay: 0s,.2s;
+    }
+    .header-black ul.right li a span.fab, span.fas{
+        color: #fff;
+    }
+}

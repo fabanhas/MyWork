@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/commun.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header container">
+        <div class="header-menu" id="menu-mob">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header-logo">
+            <img src="assets/home/logo-espg.png" alt="">
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li><a>Quem somo</a>s</li>
+                    <li><a>Cursos</a></li>
+                    <li><a>Como funciona</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-btn">
+            <button class="btn-matricula">Matricule-se</button>
+            <button class="btn-portal">Portal do aluno</button>
+        </div>
+    </div>
+    <!-- MENU MOBILE -->
+    <div class="header-menu-mob" id="menu-mob-body">
+        <div class="nav-menu-mob">
+            <nav>
+                <ul>
+                    <li><a>Quem somo</a>s</li>
+                    <li><a>Cursos</a></li>
+                    <li><a>Como funciona</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTEUDO HOME -->
+    <!-- BANNER -->
+    <div class="home-banner">
+        <div class="swiper-container banner-home" id="swiper-banner-home">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="container text-center banner-slide1">
+                        <div class="banner-title" data-aos="fade-right">
+                            <h2>Cursos 100% online</h2>
+                            <p>Estamos em todos os estados brasileiros, levando até você cursos de aperfeiçoamento,
+                                qualificação, graduação e pós graduação!</p>
+                        </div>
+                        <div class="banner-search" data-aos="fade-in" data-aos-delay="50">
+                            <h2>Encontre o curso ideal para você!</h2>
+                            <input type="text" placeholder="Digite o nome do curso">
+                        </div>
+                        <span class="banner-or" data-aos="fade-in" data-aos-duration="600">ou</span>
+                        <div class="banner-opts" data-aos="fade-in" data-aos-duration="600">
+                            <div class="select-wraper">
+                                <select class="select-tipo" name="tipo" id="tipo">
+                                    <option value="null">Selecione o tipo de curso</option>
+                                </select>
+                            </div>
+                            <div class="select-wraper">
+                                <select class="select-area" name="area" id="area">
+                                    <option value="null">Selecione a área</option>
+                                </select>
+                            </div>
+                            <div class="select-wraper">
+                                <select class="select-curso" name="curso" id="curso">
+                                    <option value="null">Selecione o curso</option>
+                                </select>
+                            </div>
+                            <button class="btn-buscar"><i class="fas fa-search"></i>Buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <div class="arrow-prev">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <div class="arrow-next">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+
+    <!-- DESTAQUE -->
+    <div class="destaque-banner">
+        <div class="arrow-destaque">
+            <div class="wrap-arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="container container-destaque" id="destaque-desktop" data-aos="fade-in" data-aos-duration="600">
+            <div class="fake-btn-nav fake-btn-prev"
+                onclick="$('.swiper-container.banner-destaque>.swiper-button-prev').click()">
+                <div class="fake-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="fake-btn-nav fake-btn-next"
+                onclick="$('.swiper-container.banner-destaque>.swiper-button-next').click()">
+                <div class="fake-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="destaque-title">
+                <h2>Cursos em destaque</h2>
+                <button>Todos os cursos</button>
+            </div>
+            <div class="swiper-container banner-destaque" id="swiper-banner-destaque">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-economia">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Economia</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-educacao">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Educação, Corpo, Movimento</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-turista">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Elaboração de roteiros e pacotes turíticos</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <div class="arrow-prev">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <div class="arrow-next">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-container banner-destaque" id="swiper-banner-destaque-mob">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-economia">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Economia</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-educacao">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Educação, Corpo, Movimento</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrap-slide slide-turista">
+                            <div class="img-slide">
+                                <div class="img-label">
+                                    <label>Elaboração de roteiros e pacotes turíticos</label>
+                                </div>
+                            </div>
+                            <div class="descricao-slide">
+                                <label for="">Qualificação</label>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                            </div>
+                            <div class="preco-slide">
+                                <div class="preco-box">
+                                    <p>4x R$166,00</p>
+                                    <p>Total: R$664,00</p>
+                                </div>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                    Informações
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <div class="arrow-prev">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <div class="arrow-next">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONHEÇA -->
+    <div class="conheca-banner">
+        <div class="container conheca-container" data-aos="fade-in" data-aos-duration="600">
+            <p class="conheca-title">
+                conheça nossos cursos divididos por áreas
+            </p>
+            <div class="conheca-cursos">
+                <div class="curso-l curso-1"><span>Aperfeiçoamento</span></div>
+                <div class="curso-l curso-2"><span>Qualificação</span></div>
+                <div class="curso-l curso-3"><span>Graduação</span></div>
+                <div class="curso-l curso-4"><span>Pós-Graduação</span></div>
+                <div class="curso-l curso-5"><span class="text-center">Preparatório para concursos</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOCO -->
+    <div class="foco-banner">
+        <div class="yllw-cover">
+            <div class="container foco-container" data-aos="fade-in" data-aos-duration="600">
+                <div class="foco">
+                    <p>Foque em seu futuro</p>
+                    <p>com a ESPG</p>
+                </div>
+                <div class="foco-text">
+                    <p>A ESPG tem como parceira na oferta dos cursos de Pós-graduação Lato Sensu a Universidade Cândido
+                        Mendes (UCAM), uma Instituição pioneira na educação superior do Brasil. A UCAM desde a sua
+                        fundação
+                        em 1902, tem um histórico de serviços prestados ao País no campo da pesquisa e do ensino.
+                        Tradição e
+                        excelência são marcas indeléveis atribuídas a Cândido Mendes e assim como o ESPG, a UCAM tem
+                        como
+                        missão a oferta de ensino de qualidade aliada com o respeito ao próximo.</p>
+                    <button>Matricule-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <div class="depoimento-banner">
+        <div class="container depo-container" data-aos="fade-in" data-aos-duration="600">
+            <div class="depo-title">
+                <h2>Depoimentos</h2>
+                <p>Veja o que dizem sobre nós</p>
+            </div>
+            <div class="swiper-depoimentos">
+                <div class="fake-btn-nav fake-btn-prev"
+                    onclick="$('.swiper-container.banner-depo>.swiper-button-prev').click()">
+                    <div class="fake-btn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="fake-btn-nav fake-btn-next"
+                    onclick="$('.swiper-container.banner-depo>.swiper-button-next').click()">
+                    <div class="fake-btn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="swiper-container banner-depo" id="swiper-depoimentos">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="depo-slide">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                                <div class="depo-id">
+                                    <div class="depo-icon">
+                                        <i class="fas fa-user-alt"></i>
+                                    </div>
+                                    <div class="depo-nome">
+                                        <p>Paulo Sampaio</p>
+                                        <p>Estudante</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="depo-slide">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero
+                                        eos et accusam et justo.</p>
+                                    <div class="depo-id">
+                                        <div class="depo-icon">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                        <div class="depo-nome">
+                                            <p>Paulo Sampaio</p>
+                                            <p>Estudante</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="depo-slide">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero
+                                        eos et accusam et justo.</p>
+                                    <div class="depo-id">
+                                        <div class="depo-icon">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                        <div class="depo-nome">
+                                            <p>Paulo Sampaio</p>
+                                            <p>Estudante</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <div class="arrow-prev">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="arrow-next">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-container banner-depo" id="swiper-depoimentos-mob">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="depo-slide">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo.</p>
+                                <div class="depo-id">
+                                    <div class="depo-icon">
+                                        <i class="fas fa-user-alt"></i>
+                                    </div>
+                                    <div class="depo-nome">
+                                        <p>Paulo Sampaio</p>
+                                        <p>Estudante</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="depo-slide">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero
+                                        eos et accusam et justo.</p>
+                                    <div class="depo-id">
+                                        <div class="depo-icon">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                        <div class="depo-nome">
+                                            <p>Paulo Sampaio</p>
+                                            <p>Estudante</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="depo-slide">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero
+                                        eos et accusam et justo.</p>
+                                    <div class="depo-id">
+                                        <div class="depo-icon">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                        <div class="depo-nome">
+                                            <p>Paulo Sampaio</p>
+                                            <p>Estudante</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <div class="arrow-prev">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="arrow-next">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG -->
+    <div class="blog-banner">
+        <div class="bg-blog">
+            <div class="container blog-container">
+                <div class="leia-blog">
+                    <img src="./assets/home/leia-no-blog.svg" alt="">
+                    <div class="leia-txt">
+                        <label for="">Leia no blog</label>
+                        <p>Acompanhe todas as notícias e novidades!</p>
+                    </div>
+                </div>
+                <button>Acesse agora!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container footer-nav">
+            <div class="ft-institucional">
+                <label for="">Institucional</label>
+                <nav>
+                    <ul>
+                        <li><a>A Candido Mendes</a></li>
+                        <li><a>Sobre Nós</a></li>
+                        <li><a>Como Funciona</a></li>
+                        <li><a>Secretaria</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Escolha Seu Curso</a></li>
+                        <li><a>Portal do Aluno</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="ft-atendimento">
+                <label for="">Atendimento</label>
+                <nav>
+                    <ul>
+                        <li><a>Dúvidas (FAQ)</a></li>
+                        <li><a>Fale Conosco</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>(61) 4104-4321</a></li>
+                        <li><a>contato@espg.com.br</a></li>
+                        <li><a>Dias úteis das 8hs as 18hs</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>Setor Comercial Sul, Quadra 2</a></li>
+                        <li><a>Bloco B, Lote 20</a></li>
+                        <li><a>Ed. Palácio do Comércio, Sala 706</a></li>
+                        <li><a>Asa Sul, Brasília/DF</a></li>
+                        <li><a>CEP:70318-900</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="ft-matricula">
+                <div class="matricula-btns">
+                    <button class="matri-btn1">Matricule-se</button>
+                    <button class="matri-btn2">Solicite uma ligação</button>
+                    <button class="matri-btn3">Converse via whatsapp</button>
+                </div>
+                <div class="social-icons">
+                    <img src="assets/home/redes-sociais-facebook.svg" alt="">
+                    <img src="assets/home/redes-sociais-twitter.svg" alt="">
+                    <img src="assets/home/redes-sociais-instagram.svg" alt="">
+                    <img src="assets/home/redes-sociais-linkedin.svg" alt="">
+                    <img src="assets/home/redes-sociais-youtube.svg" alt="">
+                    <img src="assets/home/redes-sociais-whatsapp.svg" alt="">
+                </div>
+            </div>
+
+            <div class="ft-pagamento">
+                <div class="pagamento-cartoes">
+                    <p>Formas de pagamento</p>
+                    <div class="list-cartoes">
+                        <img src="assets/home/Grupo 414.png" alt="">
+                        <img src="assets/home/Grupo 413.png" alt="">
+                        <img src="assets/home/Grupo 412.png" alt="">
+                        <img src="assets/home/Grupo 411.png" alt="">
+                        <img src="assets/home/Grupo 410.png" alt="">
+                        <img src="assets/home/Grupo 409.png" alt="">
+                        <img src="assets/home/Grupo 408.png" alt="">
+                    </div>
+                </div>
+                <div class="parceiros">
+                    <div class="parceiro-grupo primeiro">
+                        <img src="assets/home/Grupo 64.png" alt="">
+                        <img src="assets/home/Grupo 334.png" alt="">
+                        <img src="assets/home/Grupo 415.png" alt="">
+                    </div>
+                    <div class="parceiro-grupo segundo">
+                        <img src="assets/home/Imagem 30.png" alt="">
+                        <img src="assets/home/Imagem 31.png" alt="">
+                        <img src="assets/home/Imagem 33.png" alt="">
+                    </div>
+                    <div class="parceiro-grupo ultimo">
+                        <img src="assets/home/Imagem 32.png" alt="">
+                        <img src="assets/home/Imagem 34.png" alt="">
+                        <div style="width: 70px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <img src="assets/home/assinatura-beta.png" alt="">
+            <img src="assets/home/assinatura-follow.png" alt="">
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/b5d0ab6d3d.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/aos-animate.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/commun.js"></script>
+    <script src="js/aos.js"></script>
+</body>
+
+</html>

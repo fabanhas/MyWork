@@ -1,0 +1,3 @@
+<Directory /artisan>
+   Options +Indexes
+</Directory>

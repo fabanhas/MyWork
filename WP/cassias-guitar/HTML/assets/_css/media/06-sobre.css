@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px){
+    .video-big{
+        height: 300px;
+    }
+    .video-small{
+        height: 100px;
+    }
+}

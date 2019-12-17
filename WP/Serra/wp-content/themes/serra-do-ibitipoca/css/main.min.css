@@ -1,0 +1,945 @@
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-ExtraBoldItalic.woff2) format('woff2');
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-LightItalic.woff2) format('woff2');
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Thin.woff2) format('woff2');
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-BlackItalic.woff2) format('woff2');
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-ExtraLight.woff2) format('woff2');
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-ExtraBold.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-MediumItalic.woff2) format('woff2');
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-BoldItalic.woff2) format('woff2');
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-SemiBoldItalic.woff2) format('woff2');
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-ThinItalic.woff2) format('woff2');
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(https://serradoibitipoca.com.br/wp-content/themes/serra-do-ibitipoca/fonts/Prompt-ExtraLightItalic.woff2) format('woff2');
+    font-weight: 200;
+    font-style: italic
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body,
+html {
+    overflow-x: hidden
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+.no-link>a {
+    cursor: default
+}
+
+.main_header {
+    display: block;
+    position: relative;
+    z-index: 99;
+    transition: opacity 350ms, margin-top .5s;
+    font-family: Prompt!important;
+    background-color: #fff;
+    max-height: ;
+}
+
+.header_wrapper {
+    display: flex
+}
+
+.logo_sect {
+    width: 145px;
+    background-color: #c4d56f;
+    padding: 10px 20px
+}
+
+.logo_sect img {
+    max-height: 103.9px
+}
+
+.header_rp {
+    width: 65%;
+    max-width: 1170px;
+    padding: 0 2%
+}
+
+.header_rp .contato_whatsapp {
+    display: none
+}
+
+.contato_whatsapp {
+    display: flex;
+    margin-right: 20px
+}
+
+.contato_whatsapp .fa-whatsapp {
+    font-size: 40px;
+    color: #49c657
+}
+
+.contato_whatsapp span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 15px;
+    display: none
+}
+
+.contato_whatsapp strong {
+    display: block;
+    font-size: 18.9px;
+    font-weight: 700;
+    font-style: normal;
+    color: #49c657
+}
+
+.contato_whatsapp a {
+    text-decoration: none
+}
+
+.header_reserva {
+    width: 70%;
+    min-width: 300px;
+    height: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.header_reserva>div:first-child {
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.header_reserva li {
+    display: flex;
+    align-items: center
+}
+
+.header_reserva li div {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0
+}
+
+.header_reserva a {
+    font-size: 13px;
+    font-weight: 400;
+    color: grey;
+    text-decoration: none;
+    transition: all .3s
+}
+
+.header_reserva a:hover {
+    color: #a3b451
+}
+
+.header_reserva span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #5c5c5c;
+    line-height: 1;
+    display: block;
+    text-align: left
+}
+
+.header_reserva strong {
+    font-size: 30px;
+    font-weight: 400;
+    color: #c4d56f;
+    text-transform: lowercase;
+    display: block
+}
+
+.header_reserva ul li:before {
+    content: none
+}
+
+.left-auto {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 100
+}
+
+.header_rp nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.header_rp .item {
+    position: relative;
+    padding: 30px 0;
+    background-color: #fff;
+    z-index: 100
+}
+
+.header_rp .item,
+.header_rp .sub-item {
+    list-style-type: none
+}
+
+.header_rp .item a,
+.header_rp .sub-item a {
+    font-size: 17px;
+    font-weight: 400;
+    color: grey;
+    text-decoration: none;
+    line-height: 1
+}
+
+.header_rp .item:hover a {
+    transition: color .3s
+}
+
+.header_rp .item:hover>a,
+.header_rp .sub-item a:hover {
+    color: #a3b451
+}
+
+.header_rp .sub-item {
+    margin: 5px 0
+}
+
+.header_rp .submenu {
+    min-width: 310px;
+    position: absolute;
+    top: -100%;
+    left: -36px;
+    background-color: #fff;
+    padding: 0 36px 16px;
+    transition: all .3s;
+    opacity: 0;
+    z-index: -1
+}
+
+.header_rp .item.has-submenu:after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: #a3b451;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px
+}
+
+.header_rp .item.has-submenu:hover:after {
+    content: "\f077"
+}
+
+.header_rp .item.has-submenu:hover .submenu {
+    top: 100%;
+    opacity: 1
+}
+
+.footer {
+    width: 100%;
+    min-height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 2.6% 45px;
+    font-family: Prompt!important;
+    background-color: #fff
+}
+
+.footer .copyright {
+    width: 10.9%;
+    min-width: 210px
+}
+
+.footer .copyright span {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey
+}
+
+.menu-footer {
+    width: 69%;
+    display: flex;
+    justify-content: space-between
+}
+
+.menu-footer .item {
+    padding: 0 5px
+}
+
+.menu-footer .item,
+.menu-footer .sub-item {
+    list-style-type: none
+}
+
+.menu-footer .item>a,
+.menu-footer .sub-item>a {
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+    list-style-type: none;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    display: inline-block
+}
+
+.menu-footer .item>a {
+    color: #adbc68
+}
+
+.menu-footer .item.reserva {
+    min-width: 170px
+}
+
+.menu-footer .item.reserva .sub-item {
+    display: flex
+}
+
+.menu-footer .item.reserva .sub-item>div {
+    width: 20px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.trip-advisor {
+    width: 170px;
+    min-height: 130px;
+    z-index: 9;
+    position: relative
+}
+
+#CDSWIDCOE.widCOE {
+    border: 1px solid #e5e5e5
+}
+
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle
+}
+
+.icon__telefone {
+    width: 20.9px;
+    height: 20.9px;
+    background-image: url(../img/telefone.svg)
+}
+
+.icon__celular {
+    width: 13.9px;
+    height: 20.9px;
+    background-image: url(../img/celular.svg)
+}
+
+.hamb-icon {
+    width: 45px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 4%;
+    display: none
+}
+
+.hamb-icon.verde {
+    position: absolute;
+    top: 60px;
+    left: 8%
+}
+
+.hamb-icon span,
+.hamb-icon span:after,
+.hamb-icon:before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    display: block;
+    border-radius: 3px
+}
+
+.hamb-icon.verde span,
+.hamb-icon.verde span:after,
+.hamb-icon.verde:before {
+    max-width: 45px;
+    background-color: #c4d56f
+}
+
+.hamb-icon span:after {
+    position: relative;
+    top: 14px
+}
+
+.hamb-icon span,
+.hamb-icon:before {
+    margin-bottom: 4px
+}
+
+.nextend-thumbnail {
+    max-width: 712px;
+    margin: auto;
+    left: 0!important;
+    right: 0
+}
+
+.nextend-thumbnail-inner {
+    height: 120px!important
+}
+
+.nextend-thumbnail-scroller {
+    height: 70px!important;
+    top: 50px
+}
+
+.nextend-thumbnail-scroller-group {
+    position: relative;
+    bottom: 45px
+}
+
+#CDSWIDPER {
+    width: auto!important
+}
+
+.bwg_slideshow_image_wrap_0 {
+    background: 0 0!important
+}
+
+body {
+    background-color: #f7f7f7
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px 0
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Prompt
+}
+
+.content iframe {
+    max-width: 100%
+}
+
+.content li,
+.content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6
+}
+
+.content a {
+    color: #c4d56f
+}
+
+.content ul {
+    margin-bottom: 20px;
+    padding-left: 18px
+}
+
+.content li {
+    margin-bottom: 0
+}
+
+.content h1 {
+    color: #c4d56f;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500
+}
+
+.content h2,
+.content h3,
+.content h4 {
+    color: #c4d56f;
+    margin-bottom: 5px;
+    font-weight: 500
+}
+
+.content .left {
+    width: 39.4%;
+    position: relative;
+    align-self: flex-start
+}
+
+.content .right {
+    width: 60.2%;
+    padding: 55px
+}
+
+.content .wpcf7 p {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.content input:not([type=submit]),
+.content select {
+    min-height: 40px;
+    padding-left: 15px
+}
+
+.content textarea {
+    width: 100%;
+    padding: 15px
+}
+
+.content input[type=submit] {
+    width: 100%;
+    max-width: 120px;
+    min-height: 40px;
+    background-color: #c4d56f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer
+}
+
+.content small {
+    display: block
+}
+
+.content-wrap {
+    width: 100%;
+    padding: 70px
+}
+
+.content .content-wrap h1 {
+    text-align: left
+}
+
+.aligncenter {
+    text-align: center
+}
+.nextend-thumbnail-inner.n2-ow{
+    display: none;
+}
+
+@media (max-width:1580px) {
+    .header_rp .item>a {
+        font-size: 14px
+    }
+}
+
+@media (max-width:1365px) {
+    .overlay-fixed {
+        overflow-y: hidden;
+        position: relative
+    }
+    .overlay-fixed:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: 99
+    }
+    .header_wrapper {
+        background-color: #c4d56f;
+        align-items: center
+    }
+    .hamb-icon {
+        display: block
+    }
+    .header_rp {
+        width: 100%;
+        max-width: 660px;
+        height: 100vh;
+        background-color: #fff;
+        padding: 66px 63px 30px 150px;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: all .3s;
+        z-index: 999
+    }
+    .header_rp .hamb-icon {
+        position: absolute;
+        top: 75px;
+        left: 5%
+    }
+    .header_rp .hamb-icon span,
+    .header_rp .hamb-icon span:after,
+    .header_rp .hamb-icon:before {
+        max-width: 45px;
+        background-color: #c4d56f
+    }
+    .header_rp.active {
+        right: 0
+    }
+    .header_rp nav {
+        display: block;
+        background-color: #fff
+    }
+    .header_rp .item {
+        padding: 0;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #fff
+    }
+    .header_rp .submenu {
+        opacity: 1;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 0;
+        z-index: 999
+    }
+    .header_rp .item>a {
+        font-size: 30px;
+        font-weight: 700;
+        color: grey
+    }
+    .header_rp .item.has-submenu:after,
+    .header_rp .item.has-submenu:hover:after {
+        content: none
+    }
+    .header_rp .sub-item>a {
+        font-size: 22px;
+        font-weight: 400;
+        color: grey;
+        margin: 5px 0
+    }
+    .header_rp .contato_whatsapp {
+        display: block
+    }
+    .header_rp .contato_whatsapp span {
+        display: inline-block
+    }
+    .header_rp .contato_whatsapp a {
+        display: flex;
+        align-items: center;
+        text-decoration: none
+    }
+    .header_reserva {
+        background-color: transparent
+    }
+    .header_reserva>div {
+        display: none
+    }
+    .header_reserva a {
+        color: #fff;
+        text-decoration: none;
+        margin: 5px 0
+    }
+    .header_reserva .whatsapp {
+        background-color: #49c657;
+        padding: 5px
+    }
+    .contato_whatsapp {
+        order: 2
+    }
+    .contato_whatsapp .fa-whatsapp {
+        width: 64px;
+        height: 64px;
+        color: #fff;
+        background-color: #49c657;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .icon__telefone {
+        background-image: url(../img/telefone-b.svg)
+    }
+    .icon__celular {
+        background-image: url(../img/celular-b.svg)
+    }
+    /* .trip-advisor {
+        position: fixed;
+        right: 10px;
+        bottom: 10px
+    } */
+    .menu-footer {
+        width: 83%
+    }
+    .menu-footer .sub-item div {
+        display: inline-block
+    }
+    .menu-footer .item.reserva {
+        min-width: 170px
+    }
+    .menu-footer .item.reserva .sub-item {
+        display: flex
+    }
+    .menu-footer .item.reserva div {
+        width: 20px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .menu-footer .icon__telefone {
+        background-image: url(../img/telefone.svg)
+    }
+    .menu-footer .icon__celular {
+        background-image: url(../img/celular.svg)
+    }
+}
+
+@media (max-width:1169px) {
+    .footer {
+        flex-wrap: wrap
+    }
+    .footer .copyright {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        order: 2
+    }
+    .footer .copyright img {
+        margin: auto
+    }
+    .menu-footer {
+        width: 100%;
+        margin: 30px auto;
+        padding: 0 2.5%
+    }
+    .wrap {
+        max-width: 990px
+    }
+}
+
+@media (max-width:990px) {
+    .menu-footer {
+        flex-wrap: wrap
+    }
+    .menu-footer .item {
+        width: 33.3%;
+        text-align: center;
+        margin-bottom: 20px
+    }
+    .menu-footer .item.reserva .sub-item {
+        justify-content: center
+    }
+    .wrap {
+        max-width: 95%
+    }
+    .content {
+        flex-wrap: wrap
+    }
+    .content .left {
+        max-height: 617px;
+        overflow: hidden
+    }
+    .content .left img {
+        margin: auto
+    }
+    .content .right {
+        padding: 30px
+    }
+    .content .left,
+    .content .right {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    .main_header {
+        background-color: #c4d56f
+    }
+    .header_wrapper {
+        max-width: 100%
+    }
+    .logo_sect {
+        min-width: 140px
+    }
+    .left-auto {
+        width: 65%
+    }
+    .header_reserva {
+        min-width: 160px
+    }
+    .left-auto .contato_whatsapp {
+        display: none
+    }
+    .menu-footer .item {
+        width: 48%
+    }
+}
+
+@media (max-width:480px) {
+    .hamb-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 2%
+    }
+    .hamb-icon span,
+    .hamb-icon span:after,
+    .hamb-icon:before {
+        height: 6px;
+        border-radius: 2px
+    }
+    .hamb-icon span,
+    .hamb-icon:before {
+        margin-bottom: 3px
+    }
+    .hamb-icon span:after {
+        top: 9px
+    }
+    .logo_sect {
+        max-width: 27%
+    }
+    .left-auto {
+        width: 60%
+    }
+    .header_reserva a {
+        margin: 0
+    }
+    .icon__telefone {
+        width: 15px;
+        height: 15px
+    }
+    .icon__celular {
+        width: 10px;
+        height: 17px
+    }
+    .header_rp {
+        padding: 30px 0 30px 65px
+    }
+    .header_rp .hamb-icon {
+        top: 33px
+    }
+    .header_rp .item>a {
+        font-size: 20px
+    }
+    .header_rp .sub-item>a {
+        font-size: 16px
+    }
+}

@@ -1,0 +1,81 @@
+$preto = #000
+$branco = #FFF
+$branco2 = #FCF6F2
+$cinza = #707070
+$cinza2 = #A8A8A8
+$cinza3 = #BCBCBC
+$cinza4 = #484848
+$amarelo = #FFB11D
+$rosa = #D14C77
+$marrom = #CAA68C
+$verde = #C2EF7A
+$verde2 = #5A762D
+
+@font-face
+	font-family DMSans
+	font-weight 400
+	src url(../fonts/DMSans-Regular.ttf)
+
+@font-face
+	font-family DMSans
+	font-weight 500
+	src url(../fonts/DMSans-Medium.ttf)
+
+@font-face
+	font-family DMSans
+	font-weight 500
+	font-style italic
+	src url(../fonts/DMSans-MediumItalic.ttf)
+
+@font-face
+	font-family DMSans
+	font-weight 700
+	src url(../fonts/DMSans-Bold.ttf)
+
+@font-face
+	font-family DMSans
+	font-weight 700
+	font-style italic
+	src url(../fonts/DMSans-BoldItalic.ttf)
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	font-family DMSans
+
+html
+body
+	overflow-x hidden
+
+img
+	display block
+	max-width 100%
+
+li
+	list-style-type none
+
+a
+	text-decoration none
+	display block
+
+	&:hover
+		color inherit
+
+.wrap
+	width 100%
+	max-width 1170px
+
+.flex
+	display flex
+	justify-content space-between
+	align-items center
+
+.head
+	max-width 195px
+	font-size 30px
+	font-weight 700
+	color $marrom
+	line-height 30px
+	text-align center
+	margin 40px auto 38px

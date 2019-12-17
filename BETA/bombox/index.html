@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | BomBox</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick-theme.css">
+  
+</head>
+<body>
+  <div id="sidenav">
+    <div id="content-sidenav">
+      <div id="top-sidenav">
+        <button id="btn-close-sidenav" class="btn"><img src="img/icon-close-sidenav.png"></button>
+        <a class="logo-mobile" ></a>
+        <div id="icon-search-mobile"><a href="/checkout"><img src="img/icon-search-mobile-white.png"></a></div>
+        <div class="nao-logado"><a href="javascript:;" canopus-open-identification-modal><img src="img/icon-user-mobile-white.png"></a></div>
+        <!--<div class="logado"><a href="/account"><img src="img/icon-user-mobile-white.png"></a></a></div>-->
+        <div><a href="/checkout"><img src="img/icon-cart-mobile-white.png"></a></div>
+      </div>
+      <div id="bottom-sidenav">
+        <div class="menu-sidenav btn-abrir-modal-categorias">
+          Produtos
+        </div>
+        <div class="menu-sidenav">
+          Clube de assinaturas
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--se estiver na home, tem class top-mobile-home-->
+  <div id="top-mobile" class="sticky mobile-flex-item top-mobile-home">
+    <button id="btn-open-sidenav" class="btn"><img src="img/icon-open-sidenav.png"></button>
+    <!--outras páginas
+    <a class="logo-mobile" href="/"><img src="img/logo-header.png"></a>-->
+    <!--home-->
+    <a class="logo-mobile" ></a>
+    <div id="icon-search-mobile"><a href="/checkout"><img src="img/icon-search-mobile.png"></a></div>
+    <div class="nao-logado"><a href="javascript:;" canopus-open-identification-modal><img src="img/icon-user-mobile.png"></a></div>
+    <!--<div class="logado"><a href="/account"><img src="img/icon-user-mobile.png"></a></a></div>-->
+    <div><a href="/checkout"><img src="img/icon-cart-mobile.png"></a></div>
+  </div>
+  <!--se estiver na home, tem class top-desktop-home-->
+  <div id="top-desktop" class="sticky desktop-flex-item top-desktop-home">
+    <div class="center">
+      <!--outras páginas-->
+      <div class="logo-desktop">
+        <a href="/"><img src="img/logo-header.png"></a>
+      </div>
+      <!--home não tem ^-->
+      <div class="menu-desktop">
+        <span class="btn-abrir-modal-categorias">
+          Produtos
+        </span>
+      </div>
+      <div class="menu-desktop">
+        <a href="/">
+          Clube de assinatura
+        </a>
+      </div>
+      <div class="menu-desktop div-search">
+        <input class="form-control input-search" type="text" placeholder="Encontre um produto">
+        <button type="submit" class="btn btn-search"><img src="img/icon-search-desktop.png"></button>
+      </div>
+      <div id="menu-icons-desktop" class="menu-desktop">
+        <div class="nao-logado"><a href="javascript:;" canopus-open-identification-modal><img src="img/icon-user-desktop.png"></a></div>
+        <!--<div class="logado"><a href="/account"><img src="img/icon-user-desktop.png"></a></a></div>-->
+        <div><a href="/checkout"><img src="img/icon-cart-desktop.png"></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="div-modal-categorias" class="hide">
+    <div class="center">
+      <div id="topo-modal-categorias-desktop" class="desktop-flex-item">
+        <div class="menu-modal-categorias">
+          <span>
+            Produtos
+          </span>
+        </div>
+        <div class="menu-modal-categorias">
+          <a href="/">
+            Clube de assinatura
+          </a>
+        </div>
+        <div class="menu-modal-categorias div-search-white">
+          <input class="form-control input-search input-search-white" type="text" placeholder="Encontre um produto">
+          <button type="submit" class="btn btn-search"><img src="img/icon-search-desktop-white.png"></button>
+        </div>
+        <div id="menu-icons-modal-categorias" class="menu-modal-categorias">
+          <div class="nao-logado"><a href="javascript:;" canopus-open-identification-modal><img src="img/icon-user-desktop-white.png"></a></div>
+          <!--<div class="logado"><a href="/account"><img src="img/icon-user-desktop-white.png"></a></a></div>-->
+          <div><a href="/checkout"><img src="img/icon-cart-desktop-white.png"></a></div>
+        </div>
+      </div>
+      <div id="div-btn-close-modal-categorias">
+        <button class="btn" id="btn-close-modal-categorias"><i class="far fa-times-circle"></i></button>
+      </div>
+      <div id="conteudo-modal-categorias">
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 1
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 2
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 3
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 4
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 5
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-categoria">
+          <div class="title-categoria-modal">
+            Categoria 6
+          </div>
+          <div class="title-subcategorias-modal">
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 1
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 2
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 3
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 4
+              </a>
+            </div>
+            <div class="title-subcategoria-modal">
+              <a href="">
+                Subcategoria 5
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page-content">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="top-home">
+      <div class="center text-center">
+        <div class="desktop-item">
+          <img src="img/logo-home.png">
+        </div>
+        <div class="mobile-item">
+          <img src="img/logo-home-mobile.png">
+        </div>
+        <div id="title-top-home">
+          Comida congelada, prática e saudável
+        </div>
+        <div id="subtitle-top-home">
+          Trabalhamos somente com ingredientes de primeira linha com entregas para Rio de Janeiro e Niterói
+        </div>
+        <a href="" class="btn btn-green">
+          Como funciona
+        </a>
+      </div>
+    </div>
+    <div id="div-como-funciona">
+      <div class="center text-center">
+        <div id="title-como-funciona">
+          Como<br /><span>funciona</span>
+        </div>
+        <div class="slider-dark">
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/como-funciona1.png">
+            </div>
+            <div class="title-como-funciona">
+              Escolha seu plano
+            </div>
+            <div class="desc-como-funciona">
+              Oferecemos 2 planos para você, com diferentes quantidades e estilos de pratos. 
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/como-funciona2.png">
+            </div>
+            <div class="title-como-funciona">
+              Monte seus pratos
+            </div>
+            <div class="desc-como-funciona">
+              Escolha os pratos para montar o seu pedido mensal, e mude-os a cada pedido se quiser! 
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/como-funciona3.png">
+            </div>
+            <div class="title-como-funciona">
+              Receba em casa
+            </div>
+            <div class="desc-como-funciona">
+              Você recebe sua assinatura no conforto da sua casa, no seu horário.
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/como-funciona4.png">
+            </div>
+            <div class="title-como-funciona">
+              Prepare sua refeição
+            </div>
+            <div class="desc-como-funciona">
+              Siga a instruções que acompanham seu prato para aquecer no microondas e faça uma ótima refeição!
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn btn-white">
+          Conheça nosso cardápio
+        </a>
+      </div>
+    </div>
+    <div id="div-pratos-em-destaque">
+      <div class="center text-center">
+        <div id="title-pratos-em-destaque">
+          Pratos em<br /><span>destaque</span>
+        </div>
+        <div class="slider-light">
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="img-spot">
+              <img src="img/img-exemplo-produto-spot.png">
+            </div>
+            <div class="desc-slider-prato">
+              <div class="title-prato-em-destaque">
+                Frango em cubos, purê de mandioquinha e brócolis
+              </div>
+              <div class="desc-prato-em-destaque">
+                Frango em cubos (150g), Purê de Mandioquinha (150g) e Brócolis (50g)
+              </div>
+              <div class="preco-prato-em-destaque">
+                <!--R$ <span class="preco-item-destaque">16,90</span>-->
+                R$ <span class="preco-int">16</span><span class="preco-cent">,90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn btn-green">
+          Veja todos os produtos
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--if home, categoria, produto-->
+    <div id="div-conheca-o-clube">
+      <div class="center">
+        <div id="left-conheca-o-clube">
+          <div class="green-square mobile-item"></div>
+          <div id="title-conheca-o-clube">
+            Clube de<br /><span>Assinatura</span>
+          </div>
+          <div class="green-square desktop-item"></div>
+        </div>
+        <div id="right-conheca-o-clube">
+          <div id="desc-conheca-o-clube">
+            Receba todos os dias nossas refeições saudáveis, deliciosas e práticas.<br />
+            <span>Conheça nosso clube de assinatura e escolha um plano!</span>
+          </div>
+          <a href="" class="btn btn-green">Conhecer!</a>
+        </div>
+      </div>
+    </div>
+    <!--if home-->
+    <div id="div-depoimentos">
+      <div class="center">
+        <div id="title-depoimentos" class="text-center">
+          O que dizem por aí<br /><span>Depoimentos</span>
+        </div>
+        <div class="slider-light">
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+          <div class="spot-slider">
+            <div class="depoimento-slider">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+            </div>
+            <div class="nome-depoimento-slider">
+              Paulo Sampaio
+            </div>
+            <div class="local-depoimento-slider">
+              São Paulo, SP
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--endif-->
+  </div>
+
+  
+  <footer id="footer">
+    <div id="div-social-footer" class="text-center">
+      <div>Siga-nos nas redes sociais</div>
+      <a href="" target="_blank"><img src="img/icon-facebook-desktop-white.png"></a>
+      <a href="" target="_blank"><img src="img/icon-instagram-desktop-white.png"></a>
+    </div>
+    <div class="center center1">
+      <div class="div-inner-footer">
+        <div class="title-menu-footer">
+          <a href="">
+            Minha conta
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="">
+            Meus pedidos
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="">
+            Como comprar
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="">
+            Entrega
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="">
+            Termos
+          </a>
+        </div>
+      </div>
+      <div class="div-inner-footer div-atendimento-footer">
+        <div class="title-menu-footer">
+          <a href="">
+            Atendimento
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="">
+            11 4004-4000
+          </a>
+        </div>
+        <div class="subtitle-menu-footer">
+          <a href="mailto:email@dominio.com.br">
+            email@dominio.com.br
+          </a>
+        </div>
+      </div>
+      <div class="div-inner-footer div-local-footer">
+        <div class="subtitle-menu-footer">
+            Rua Honorio 1682 - Loja Cachambi
+            <br />
+            CEP 20771-421 - Rio de Janeiro, RJ
+            <!--
+            <br /><br />
+            31.313.010/0001-00
+            -->
+        </div>
+      </div>
+      <div class="div-inner-footer div-pag-seg-footer">
+        <img src="img/img-pagamento.png">
+        <img src="img/img-seguranca.png">
+      </div>
+    </div>
+    <div class="center center2">
+      <div class="div-dev-footer">
+        <a href="https://betalabs.com.br" target="_blank">
+          <img src="img/logo-betalabs.png">
+        </a>
+      </div>
+      <div class="div-dev-footer">
+        <a href="http://followupcomunicacao.com.br" target="_blank">
+          <img src="img/logo-followup.png">
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    /*$('.preco-prato-em-destaque').each(function(){
+      var $preco = $(this).find('.preco-item-destaque').html();
+
+      var regexpPreco = new RegExp('/\d+\,');
+      var $precoCent = $preco.replace($preco.match(regexpPreco[0]), '');
+      console.log($preco.match(regexpPreco[0]));
+      console.log($precoCent, 'centavos')
+    });
+    */
+  </script>
+</body>
+</html>

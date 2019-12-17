@@ -1,0 +1,50 @@
+.cat-instrumentos{
+    padding: 75px 0;
+}
+.card{
+    border: 1px solid #f2f2f2;
+    margin: 0px 2px;
+    max-width: 24%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card img{
+    max-width: 220px;
+}
+.guitar-name{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+.anothers{
+    position: relative;
+    z-index: 100;
+    background-color: #FBF9FC;
+    width: 100%;
+    padding: 50px 0px;
+    top: 100%;
+    display: none;
+    margin-top: 2rem;
+}
+.anothers .card{
+    border: none;
+}
+.anothers.open{
+    display: block;
+}
+.card.card-show.active:before {
+    content: ' \25B2';
+    position: absolute;
+    bottom: -86px;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: .8;
+}

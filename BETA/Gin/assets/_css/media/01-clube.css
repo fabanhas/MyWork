@@ -1,0 +1,87 @@
+@media screen and (max-width: 1440px){ 
+    .plan-desc {
+        font-size: 13px;
+    }
+    .plan-div::before{
+        bottom: 70px;
+    }
+    .know{
+        padding-left: 50px;
+    }
+    .flex-images img {
+        margin: 10px 6px;
+    }
+}
+@media screen and (max-width: 1366px){ 
+    .plan-div{
+        max-width: 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 60%;
+    }
+    .price-plan{
+        font-size: 60px !important;
+    }
+    .know{
+        padding: 25px;
+    }
+    .flex-images{
+        flex-wrap: nowrap;
+    }
+    .flex-images img {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 768px){ 
+    .banner-clube{
+        padding-top: 100px;
+    }
+    .flex-images{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-images img {
+        margin: 10px 15px;
+    }
+    .oque-vem, .know{
+        height: auto;
+    }
+    .know{
+        padding: 10px 15px;
+        padding-bottom: 50px;
+    }
+    .oque-vem{
+        padding: 10px 25px;
+    }
+    .banner-clube h2{
+        font-size: 65px;
+    }
+    .plans {
+        flex-wrap: wrap;
+    }
+    .plan-div{
+        max-width: 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .plan-div>div:last-of-type{
+        margin-left: 5px;
+        max-width: 50%;
+    }
+    .plan-div>div:first-of-type{
+        max-width: 50%;
+    }
+    .price-plan{
+        font-size: 50px !important;
+    }
+    #footer{
+        padding-top: 50px;
+    }
+    .plan-name {
+        font-size: 30px;
+    }
+ }

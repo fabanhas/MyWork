@@ -1,0 +1,599 @@
+@import 'default.styl'
+@import 'icons.styl'
+
+@media (min-width 320px)
+	// HEADER
+	.header
+		width 100%
+		min-height 210px
+		background-image url(../img/bg-header-mobile@1x.png)
+		background-position center 40px
+		background-repeat no-repeat
+
+		.desktop
+			display none
+	.header-menu
+	.header-logo
+	.header-admin
+	.desktop-admin
+		display none
+	.header-frete
+		width 100%
+		min-height 40px
+		background-color $cinza
+		font-size 11px
+		font-weight 700
+		color $branco
+		text-transform uppercase
+		display flex
+		justify-content center
+		align-items center
+	
+	.header-wrap
+		display flex
+		justify-content space-between
+		align-items center
+		padding 10px 7% 16px
+
+		.icon__user
+			margin-right 10px
+	
+	.header-search
+		width 100%
+		min-height 41px
+		padding 10px 7% 16px
+		position relative
+
+		input[type=text]
+			width 100%
+			min-height 41px
+			border none
+			border-left 3px solid $rosa
+			font-size 11px
+			font-weight 700
+			color $cinza
+			line-height 14px
+			padding-left 35px
+			text-transform uppercase
+			background transparent
+		
+		input[type=submit]
+			position absolute
+			opacity 0
+			z-index -1
+		
+		label
+			width 24px
+			height 30px
+			position absolute
+			top 0
+			bottom 0
+			right 10%
+			margin auto
+	// FIM HEADER
+
+	// BANNERS TOP
+	.banners-top
+		.desktop
+			display none
+
+	.banner-top
+		width 100%
+		max-width 100%
+		position relative
+
+	.banner-btn
+		display flex
+		justify-content center
+		align-items center
+		width 146px
+		height 56px
+		border-radius 30px
+		font-size 18px
+		font-weight 700
+		line-height 24px
+		background-color $rosa
+		color $branco
+		position absolute
+		left 0
+		right 0
+		margin auto
+		bottom 20px
+	// FIM BANNERS TOP
+
+	// BENEFÍCIOS
+	.beneficios
+		width 100%
+		height auto
+		background-color $marrom
+		padding 30px 9.3%
+
+		li
+			display grid
+			grid-template-columns 45px calc( 100% - 45px )
+			
+			&:not(:last-child)
+				margin-bottom 20px
+		
+		p
+			font-size 13px
+			font-weight 700
+			color $branco
+			line-height 17px
+		
+		span
+			text-transform uppercase
+	// FIM BENEFÍCIOS
+
+	// TABS + CAROSSEL
+	.tab-wrap
+		ul
+			padding 0 30px
+			display flex
+			align-items center
+
+		li
+			display inline-block
+
+			a
+				min-height 63px
+				font-size 11px
+				font-weight 700
+				color $cinza
+				text-transform uppercase
+				text-align center
+				padding 15px
+				display flex
+				align-items center
+
+				&[aria-selected=true]
+					background-color $branco2
+					color $marrom
+		
+		> div:not([hidden=hidden])
+			background-color $branco2
+	
+	.tab-content--wrap
+		padding 30px 52px
+
+		.produto-item--imgs
+			.owl-item
+				background-color $branco
+
+		> .owl-dots
+			width 100%
+			display flex
+			justify-content center
+			align-items center
+			margin-top 30px
+
+			.owl-dot
+				width 12px
+				height 12px
+				border-radius 50%
+				background-color #E6DFDB
+				margin 0 3px
+
+				&.active
+					background-color $marrom
+
+	// FIM TABS + CAROSSEL
+
+	// PRODUTO ITEM
+	.produto-item
+		max-width 270px
+		margin auto
+		position relative
+
+		.flex
+			justify-content flex-start
+		
+	.produto-item--etiquetas
+		position absolute
+		top 10px
+		left 10px
+		z-index 999
+
+		> div
+			&:not(:last-child)
+				margin-bottom 10px
+
+		span
+			border-radius 3px
+			padding 6px
+			font-size 11px
+			font-weight 700
+			color $branco
+			text-transform uppercase
+
+			&.frete-gratis
+				background-color $amarelo
+
+			&.off
+				background-color $rosa
+
+	.produto-item--imgs
+		.owl-dots
+			width 100%
+		
+		.owl-dot
+			width 7px
+			height 7px
+			background-color #E5D4C8
+			border-radius 50%
+			margin 0 2px
+
+			&.active
+				background-color $marrom
+		
+		.owl-nav
+			width 100%
+			height 20px
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			margin auto
+			display flex
+			justify-content space-between
+		
+		.owl-prev
+		.owl-next
+			width 20px
+			height 40px
+
+			span
+				font-size 30px
+
+	.produto-item--categoria
+		font-size 13px
+		font-weight 400
+		color $cinza2
+		line-height 22px
+	
+	.produto-item--titulo
+		font-size 16px
+		font-weight 700
+		color $cinza
+		line-height 22px
+	
+	.produto-item--precoDe
+		font-size 13px
+		font-weight 700
+		color $cinza
+		line-height 22px
+		text-decoration line-through
+		margin-right 18px
+	
+	.produto-item--precoPor
+		font-size 16px
+		font-weight 700
+		color $marrom
+		line-height 22px
+	
+	.produto-item--parcelas
+		font-size 14px
+		font-weight 700
+		color $cinza3
+	// FIM PRODUTO ITEM
+
+	// MARCAS
+	.brands
+		padding 5px 2.1%
+		position relative
+		border-bottom 1px solid #DEDEDE
+
+		.wrap
+			max-width 210px
+			margin auto
+
+		h3
+			display none
+		
+		.owl-nav
+			width 100%
+			height 21px
+			position absolute
+			top 0
+			bottom 0
+			left 0
+			margin auto
+			display flex
+			justify-content space-between
+			align-items center
+
+			.fas
+				width 24px
+				padding 5px
+				border-radius 50%
+				border 2px solid $marrom
+				color $marrom
+				font-size 10px
+		
+		.owl-prev
+			position relative
+			left -50px
+
+		.owl-next
+			position relative
+			right -50px
+	
+	.brand
+		height 85px
+		display flex
+		justify-content center
+		align-items center
+		
+	// FIM MARCAS
+
+	// BANNERS MID
+	.banners-mid
+		width 100%
+		padding 60px 7.3%
+	
+	.banner-mid
+		&:not(:last-child)
+			margin-bottom 30px
+	// FIM BANNERS MID
+
+	// PRODUTOS CAROUSEL
+	.produtos-carousel
+		margin-bottom 75px
+
+		.wrap
+			padding 0 7.2%
+
+			> .owl-dots
+				width 100%
+				display flex
+				justify-content center
+				align-items center
+				margin-top 30px
+
+				.owl-dot
+					width 12px
+					height 12px
+					border-radius 50%
+					background-color #E6DFDB
+					margin 0 3px
+
+					&.active
+						background-color $marrom
+	// FIM PRODUTOS CAROUSEL
+
+	// NEWSLETTER
+	.newsletter
+		width 100%
+		min-height 265px
+		background-image url(../img/newsletter-mobile.jpg)
+		padding 54px 7.3% 70px
+
+		h2
+			font-size 35px
+			font-weight 400
+			color $cinza4
+			display block
+			text-align center
+			line-height 38px
+			margin-bottom 10px
+
+			span
+				font-weight 700
+				display block
+				text-transform uppercase
+		
+		form
+			width 100%
+			position relative
+		
+		input[type=submit]
+			position absolute
+			opacity 0
+			z-index -1
+		
+		input[type=text]
+			width 100%
+			min-height 58px
+			background-color $branco
+			border none
+			padding-left 27px
+			font-size 14px
+			font-weight 400
+			color $cinza4
+		
+		label
+			width 22px
+			height 22px
+			position absolute
+			top 0
+			bottom 0
+			right 20px
+			margin auto
+	// FIM NEWSLETTER
+
+	// FOOTER
+	.footer
+		padding 56px 7.3% 39px
+		background-image url(../img/footer.png)
+		background-position top
+		background-size contain
+		background-repeat no-repeat
+
+		.icon__sync
+			width 108px
+			height 163px
+			margin-bottom 28px
+
+		p
+			font-size 11px
+			font-weight 400
+			line-height 20px
+			color $cinza
+			margin-bottom 22px
+		
+		.btn-support
+			width 248px
+			height 46px
+			border-radius 5px
+			display flex
+			justify-content center
+			align-items center
+			margin auto auto 8px
+			font-size 13px
+			font-weight 700
+			text-transform uppercase
+
+			&.verde
+				background-color $verde
+				color $verde2
+			
+			&.marrom
+				background-color $marrom
+				color $branco
+			
+			.icon__whatsapp
+				margin-right 11px
+
+			.icon__chat
+				margin-right 15px
+			
+		h2
+			font-size 12px
+			font-weight 700
+			color $marrom
+			line-height 30px
+			text-transform uppercase
+			margin-bottom 10px
+		
+		li
+			a
+				font-size 10px
+				font-weight 400
+				color $cinza
+				line-height 30px
+				text-transform uppercase
+		
+	.footer-right
+		margin-top 40px
+
+		ul
+			width calc( 100% / 2 )
+			margin-bottom 20px
+	
+	.footer-left
+		ul
+			text-align center
+
+	.footer-up
+	.footer-down
+		width 100%
+		display flex
+		flex-wrap wrap
+	
+	.made-by
+		max-width 180px
+		margin 66px auto 40px
+	// FIM FOOTER
+
+@media (min-width 600px)
+	// TABS + CAROSSEL
+	.tab-content--wrap
+		padding 30px
+	// FIM TABS + CAROSSEL
+
+
+@media (min-width 768px)
+	.banners-top
+		.desktop
+			display block
+		
+		.mobile
+			display none
+@media (min-width 1170px)
+	// HEADER
+	.header
+		background-image url(../img/header-desktop.png)
+
+		.wrap
+			min-height 170px
+			display flex
+			flex-wrap wrap
+			align-items center
+			margin auto
+
+		.desktop-admin
+			display flex
+	
+	.header-frete
+		width 100%
+		align-self flex-start
+	
+	.header-logo
+		width 12.9%
+		display block
+
+		.icon__sync
+			width 80px
+			height 123px
+
+	.grid
+		width 86.6%
+
+	.header-menu
+		grid-area menu
+		display flex
+		justify-content space-between
+		align-items center
+
+		a
+			font-size 11px
+			font-weight 700
+			color $cinza
+			text-transform uppercase
+		
+		a.has-submenu
+			display flex
+			align-items center
+			color $marrom
+
+			&:before
+				content ""
+				width 21px
+				height 19px
+				background-image url(../img/hamb-marrom.svg)
+				display inline-block
+				margin-right 14px			
+
+	.header-wrap
+		padding 10px 0 0
+		margin-top 25px
+		padding-top 17px
+		border-top 1px solid #F0F0F0
+
+		&.mobile
+			display none
+	
+	.header-search
+		max-width 880px
+		padding 0
+		
+		input[type=text]
+			border-left 3px solid $marrom
+	// FIM HEADER
+
+	// BENEFICIOS
+	.beneficios
+		padding 22px 0
+
+		ul
+			max-width 1170px
+			display flex
+			margin auto
+
+		li
+			margin-right 5.4%
+
+			&:not(:last-child)
+				margin-bottom 0
+	// FIM BENEFICIOS
