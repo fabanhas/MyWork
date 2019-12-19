@@ -81,9 +81,6 @@
                 }
             </a>
         }
-        <div class="ui horizontal divider avaliacao">
-            <div class="ui tiny star rating" data-rating="@Model.Rate.Value.ToString().Replace(",", ".")"></div>
-        </div>
 
         <div class="info">
 
@@ -184,7 +181,7 @@
                     <meta itemprop="priceCurrency" content="BRL" />
                     @if (Model.PricePromotion != null && Model.PricePromotion > 0)
                     {
-                        <span id="basePrice_@Model.IdProduct" class="precoBase">de <i>@string.Format("{0:c}", Model.Price)</i> por @(Session["segment"] != null && Session["segment"].ToString() == "b2b" && Model.AvailableReferences != null ? "a partir de" : string.Empty)</span>
+                        <span id="basePrice_@Model.IdProduct" class="precoBase d-block"><i>@string.Format("{0:c}", Model.Price)</i>@(Session["segment"] != null && Session["segment"].ToString() == "b2b" && Model.AvailableReferences != null ? "a partir de" : string.Empty)</span>
                         <span class="preco">R$ <span>@string.Format("{0:n2}", Model.PricePromotion)</span></span>
                         <meta itemprop="price" content="@string.Format("{0:n2}", Model.PricePromotion).Replace(".", "").Replace(",", ".")" />
                     }
